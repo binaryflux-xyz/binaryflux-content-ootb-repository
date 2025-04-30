@@ -1,4 +1,4 @@
-def parse(data: str):
+def parse(data):
     lines = data.strip().split('\n')
     header = lines[0]
     if not header.startswith("LEEF:"):
