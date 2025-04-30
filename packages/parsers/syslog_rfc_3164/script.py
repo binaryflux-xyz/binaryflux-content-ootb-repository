@@ -1,6 +1,6 @@
 import re as re3164
 
-def parse_rfc3164(data):
+def parse(data):
     match = re3164.match(r"<(\d+)>(\w{3} \d{1,2} \d{2}:\d{2}:\d{2}) ([\w.-]+) (.*)", data)
     if not match:
         raise ValueError("Invalid RFC 3164 format")
