@@ -1,4 +1,4 @@
-def parse(data: str):
+def parse(data):
     parts = data.split("|")
     if len(parts) < 7:
         raise ValueError("Invalid CEF format")
