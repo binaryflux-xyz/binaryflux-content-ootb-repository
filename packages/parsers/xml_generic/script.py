@@ -1,5 +1,9 @@
-import xml.etree.ElementTree as ET
-
-def parse(data: str):
-    root = ET.fromstring(data)  # will raise ParseError if invalid
-    return {root.tag: {child.tag: child.text for child in root}}
+def parse(data):
+    try:
+        root = ET1.fromstring(data)
+    except ET1.ParseError:
+        raise ValueError("Invalid XML format")
+    result = {}
+    for child in root:
+        result[child.tag] = child.text
+    return {root.tag: result}
