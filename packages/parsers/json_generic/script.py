@@ -1,4 +1,7 @@
-import json
+import json as jsonparser
 
-def parse(data: str):
-    return json.loads(data)  # will raise JSONDecodeError on failure
+def parse(data):
+    try:
+        return jsonparser.loads(data)
+    except ValueError:
+        raise ValueError("Invalid JSON format")
