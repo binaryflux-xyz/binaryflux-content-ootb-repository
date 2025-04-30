@@ -1,0 +1,12 @@
+import re
+
+def parse(data: str):
+    match = re.match(r"<(\d+)>(\w{3} \d{1,2} \d{2}:\d{2}:\d{2}) ([\w.-]+) (.*)", data)
+    if not match:
+        raise ValueError("Invalid RFC 3164 format")
+    return {
+        "priority": match.group(1),
+        "timestamp": match.group(2),
+        "host": match.group(3),
+        "message": match.group(4),
+    }
