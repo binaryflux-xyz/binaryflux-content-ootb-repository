@@ -1,9 +1,10 @@
-import json
+import json as jsonstix
 
-def parse(data: str):
-    stix_json = json.loads(data)
-    return {
-        "type": stix_json["type"],
-        "id": stix_json["id"],
-        "objects": stix_json.get("objects", [])
-    }
+def parse_stix(data):
+    try:
+        parsed = jsonstix.loads(data)
+    except ValueError:
+        raise ValueError("Invalid STIX 2.1 JSON format")
+    if parsed.get("type") != "bundle":
+        raise ValueError("Expected a STIX bundle")
+    return parsed
