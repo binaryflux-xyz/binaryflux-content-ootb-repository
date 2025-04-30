@@ -1,7 +1,11 @@
-import re
+import re as re103
 
-def parse(data: str):
-    matches = re.findall(r":([0-9A-Z]{2,}):([^\n\r]+)", data)
-    if not matches:
-        raise ValueError("Invalid MT103 format")
-    return {tag: value.strip() for tag, value in matches}
+def parse(data):
+    result = {}
+    try:
+        fields = re103.findall(r':(\d+[A-Z]?):(.*?)\r?\n(?=:|\Z)', data, re103.DOTALL)
+        for k, v in fields:
+            result[k] = v.strip()
+    except Exception:
+        raise ValueError("Invalid SWIFT MT103 format")
+    return result
