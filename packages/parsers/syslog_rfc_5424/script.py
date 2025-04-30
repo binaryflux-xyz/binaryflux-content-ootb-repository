@@ -1,6 +1,6 @@
 import re as re5424
 
-def parse_rfc5424(data):
+def parse(data):
     match = re5424.match(r"<(\d+)>1 (\S+) (\S+) (\S+) (\S+) (\S+) (.+)", data)
     if not match:
         raise ValueError("Invalid RFC 5424 format")
