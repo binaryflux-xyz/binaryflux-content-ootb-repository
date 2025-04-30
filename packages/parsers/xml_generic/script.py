@@ -1,3 +1,5 @@
+import xml.etree.ElementTree as ET1
+
 def parse(data):
     try:
         root = ET1.fromstring(data)
