@@ -1,4 +1,4 @@
-import time
+import time,re
 from datetime import datetime
 
 # this to return True/False based on which this message will qualify to be used for datamodel
@@ -8,16 +8,8 @@ def criteria(metainfo):
 
 
 # this to return time of event 
-def timestamp(event):
-    """
-    Convert event time to milliseconds since the Unix epoch.
-
-    Args:
-        event (dict): Dictionary containing the event information, including the event time.
-
-    Returns:
-        int: Milliseconds since the Unix epoch representing the event time.
-    """
+def timestamp(rawdata):
+    event=_parse_message(rawdata)
     datestring = event.get("eventtime")
     
     if datestring is None:
@@ -61,16 +53,6 @@ def timestamp(event):
     
 
 def message(event):
-    """
-    Generate a message based on the event information.
-    
-    Args:
-        event (dict): Dictionary containing the event information, including message ("msg"), type ("type"), and subtype ("subtype").
-        
-    Returns:
-        str: Generated message.
-    """
-    # Retrieve the message from the event dictionary, or construct a default message if it's None.
     event_message = event.get("msg")
     
     if event_message:
@@ -87,20 +69,28 @@ def message(event):
         
     return resultmessage
 
+
+def _parse_message(event):
+    kv_pattern = re.compile(r'(\w+)=(".*?"|\S+)')
+    try:
+        message = event.get("message")
+        result = {}
+        for match in kv_pattern.finditer(message):
+            key = match.group(1)
+            value = match.group(2)
+            if value.startswith('"') and value.endswith('"'):
+                value = value[1:-1]
+            result[key] = value
+        return result
+    except Exception:
+        raise ValueError("Invalid FortiGate key-value format")
+
    
 
 
 # this to return attribute map to be indexed for this event
-def dictionary(event):
-    """
-    Convert event details into a dictionary format for easy access.
-    
-    Args:
-        event (dict): Dictionary containing the event information.
-        
-    Returns:
-        dict: Dictionary containing the event details organized by categories.
-    """
+def dictionary(rawdata):
+    event=_parse_message(rawdata)
     return modify({
         # Policy information
         "policy_name": event.get("policyname"),
@@ -232,4 +222,3 @@ def modify(input):
         if isinstance(value, str):
             input[key] = remove_quotes(value)
     return input
-
