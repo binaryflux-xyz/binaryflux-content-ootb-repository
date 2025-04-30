@@ -1,7 +1,7 @@
-import re
+import re as re5424
 
-def parse(data: str):
-    match = re.match(r"<(\d+)>1 (\S+) (\S+) (\S+) (\S+) (\S+) (.+)", data)
+def parse_rfc5424(data):
+    match = re5424.match(r"<(\d+)>1 (\S+) (\S+) (\S+) (\S+) (\S+) (.+)", data)
     if not match:
         raise ValueError("Invalid RFC 5424 format")
     return {
@@ -11,5 +11,5 @@ def parse(data: str):
         "app_name": match.group(4),
         "proc_id": match.group(5),
         "msg_id": match.group(6),
-        "structured_data": match.group(7),
+        "structured_data": match.group(7)
     }
