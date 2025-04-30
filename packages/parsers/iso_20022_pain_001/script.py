@@ -1,13 +1,11 @@
-import xml.etree.ElementTree as ET
+import xml.etree.ElementTree as ET2
 
-def parse(data: str):
-    root = ET.fromstring(data)
-    ns = {'ns': root.tag.split('}')[0].strip('{')}
-    header = root.find('.//ns:GrpHdr', ns)
-    if header is None:
-        raise ValueError("pain.001 format does not contain GrpHdr")
-    return {
-        "MsgId": header.findtext('ns:MsgId', default="", namespaces=ns),
-        "CreDtTm": header.findtext('ns:CreDtTm', default="", namespaces=ns),
-        "NbOfTxs": header.findtext('ns:NbOfTxs', default="", namespaces=ns)
-    }
+def parse(data):
+    try:
+        root = ET2.fromstring(data)
+    except ET2.ParseError:
+        raise ValueError("Invalid ISO 20022 pain.001 XML format")
+    result = {}
+    for child in root:
+        result[child.tag] = child.text
+    return {root.tag: result}
