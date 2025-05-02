@@ -8,7 +8,6 @@ def configure():
         "searchable": False,
         "datepicker": True,
         "properties": {"type": "singlecolumn","onclick":"filter_apply"},
-      # "filters":['secmark/default/widgetfilters/windows_host_filter/'],
         "dimension": {"x":0,"y":0,"width": 9, "height": 3}
     }
 
