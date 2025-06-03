@@ -6,19 +6,19 @@
 Use these lookup data to enrich events. Import it into minio or s3 by create a bucket called lookups and import them via the lookup functionlity in the binaryflux application.
 
 Maxmindipv4
-  - Provides geolocation information for IPv4 addresses using Maxmind’s processed GeoLite2-Country-Blocks data
+    Provides geolocation information for IPv4 addresses using Maxmind’s processed GeoLite2-Country-Blocks data
   - s3://lookups/maxmind/GeoLite2-Country-Blocks-IPv4-processed.csv
 Maxmindipv6
-  - Provides geolocation information for IPv6 addresses using Maxmind’s processed GeoLite2-Country-Blocks data
+    Provides geolocation information for IPv6 addresses using Maxmind’s processed GeoLite2-Country-Blocks data
   - s3://lookups/maxmind/GeoLite2-Country-Blocks-IPv6-processed.csv
 Maxmindcountries
-  - Provides geolocation countries data using Maxmind’s processed GeoLite2-Country-Locations data
+    Provides geolocation countries data using Maxmind’s processed GeoLite2-Country-Locations data
   - s3://lookups/maxmind/GeoLite2-Country-Locations-en.csv
 MitreTactics
-  - Provides comprehensive data on MITRE tactics and their descriptions, aiding in threat intelligence and cybersecurity analysis
+    Provides comprehensive data on MITRE tactics and their descriptions, aiding in threat intelligence and cybersecurity analysis
   - s3://lookups/mitre/mitre_tactics_and_description.csv
 MitreTechniques
-  - Provides detailed information on MITRE techniques along with their descriptions, facilitating advanced threat intelligence analysis
+    Provides detailed information on MITRE techniques along with their descriptions, facilitating advanced threat intelligence analysis
   - s3://lookups/mitre/mitre_tactics_and_techniques.csv
 
 Usage:
