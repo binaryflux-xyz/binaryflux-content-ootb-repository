@@ -1,0 +1,1819 @@
+field,type,example
+timestamp,date,2016-05-23T08:05:34.853Z
+labels,object,"{""application"": ""foo-bar"", ""env"": ""production""}"
+message,match_only_text,Hello World
+tags,keyword,"[""production"", ""env2""]"
+agent_build_original,keyword,"metricbeat version 7.6.0 (amd64), libbeat 7.6.0 [6a23e8f8f30f5001ba344e4e54d8d9cb82cb107c built 2020-02-05 23:10:10 +0000 UTC]"
+agent_ephemeral_id,keyword,8a4f500f
+agent_id,keyword,8a4f500d
+agent_name,keyword,foo
+agent_type,keyword,filebeat
+agent_version,keyword,6.0.0-rc2
+client_address,keyword,
+client_as_number,long,15169
+client_as_organization_name,keyword,Google LLC
+client_as_organization_name_text,match_only_text,Google LLC
+client_bytes,long,184
+client_domain,keyword,foo.example.com
+client_geo_city_name,keyword,Montreal
+client_geo_continent_code,keyword,
+client_geo_continent_name,keyword,North America
+client_geo_country_iso_code,keyword,CA
+client_geo_country_name,keyword,Canada
+client_geo_location,geo_point,"{ ""lon"": -73.614830, ""lat"": 45.505918 }"
+client_geo_name,keyword,boston-dc
+client_geo_postal_code,keyword,94040
+client_geo_region_iso_code,keyword,CA-QC
+client_geo_region_name,keyword,Quebec
+client_geo_timezone,keyword,America/Argentina/Buenos_Aires
+client_ip,ip,
+client_mac,keyword,00-00-5E-00-53-23
+client_nat_ip,ip,
+client_nat_port,long,
+client_packets,long,12
+client_port,long,
+client_registered_domain,keyword,example.com
+client_subdomain,keyword,east
+client_top_level_domain,keyword,co.uk
+client_user_domain,keyword,
+client_user_email,keyword,
+client_user_full_name,keyword,Albert Einstein
+client_user_full_name_text,match_only_text,Albert Einstein
+client_user_group_domain,keyword,
+client_user_group_id,keyword,
+client_user_group_name,keyword,
+client_user_hash,keyword,
+client_user_id,keyword,S-1-5-21-202424912787-2692429404-2351956786-1000
+client_user_name,keyword,a.einstein
+client_user_name_text,match_only_text,a.einstein
+client_user_roles,keyword,"[""kibana_admin"", ""reporting_user""]"
+cloud_account_id,keyword,666777888999
+cloud_account_name,keyword,binaryflux-dev
+cloud_availability_zone,keyword,us-east-1c
+cloud_instance_id,keyword,i-1234567890abcdef0
+cloud_instance_name,keyword,
+cloud_machine_type,keyword,t2.medium
+cloud_origin_account_id,keyword,666777888999
+cloud_origin_account_name,keyword,binaryflux-dev
+cloud_origin_availability_zone,keyword,us-east-1c
+cloud_origin_instance_id,keyword,i-1234567890abcdef0
+cloud_origin_instance_name,keyword,
+cloud_origin_machine_type,keyword,t2.medium
+cloud_origin_project_id,keyword,my-project
+cloud_origin_project_name,keyword,my project
+cloud_origin_provider,keyword,aws
+cloud_origin_region,keyword,us-east-1
+cloud_origin_service_name,keyword,lambda
+cloud_project_id,keyword,my-project
+cloud_project_name,keyword,my project
+cloud_provider,keyword,aws
+cloud_region,keyword,us-east-1
+cloud_service_name,keyword,lambda
+cloud_target_account_id,keyword,666777888999
+cloud_target_account_name,keyword,binaryflux-dev
+cloud_target_availability_zone,keyword,us-east-1c
+cloud_target_instance_id,keyword,i-1234567890abcdef0
+cloud_target_instance_name,keyword,
+cloud_target_machine_type,keyword,t2.medium
+cloud_target_project_id,keyword,my-project
+cloud_target_project_name,keyword,my project
+cloud_target_provider,keyword,aws
+cloud_target_region,keyword,us-east-1
+cloud_target_service_name,keyword,lambda
+container_cpu_usage,scaled_float,
+container_disk_read_bytes,long,
+container_disk_write_bytes,long,
+container_id,keyword,
+container_image_hash_all,keyword,[sha256:f8fefc80e3273dc756f288a63945820d6476ad64883892c771b5e2ece6bf1b26]
+container_image_name,keyword,
+container_image_tag,keyword,
+container_labels,object,
+container_memory_usage,scaled_float,
+container_name,keyword,
+container_network_egress_bytes,long,
+container_network_ingress_bytes,long,
+container_runtime,keyword,docker
+container_security_context_privileged,boolean,
+data_stream_dataset,constant_keyword,nginx.access
+data_stream_namespace,constant_keyword,production
+data_stream_type,constant_keyword,logs
+destination_address,keyword,
+destination_as_number,long,15169
+destination_as_organization_name,keyword,Google LLC
+destination_as_organization_name_text,match_only_text,Google LLC
+destination_bytes,long,184
+destination_domain,keyword,foo.example.com
+destination_geo_city_name,keyword,Montreal
+destination_geo_continent_code,keyword,
+destination_geo_continent_name,keyword,North America
+destination_geo_country_iso_code,keyword,CA
+destination_geo_country_name,keyword,Canada
+destination_geo_location,geo_point,"{ ""lon"": -73.614830, ""lat"": 45.505918 }"
+destination_geo_name,keyword,boston-dc
+destination_geo_postal_code,keyword,94040
+destination_geo_region_iso_code,keyword,CA-QC
+destination_geo_region_name,keyword,Quebec
+destination_geo_timezone,keyword,America/Argentina/Buenos_Aires
+destination_ip,ip,
+destination_mac,keyword,00-00-5E-00-53-23
+destination_nat_ip,ip,
+destination_nat_port,long,
+destination_packets,long,12
+destination_port,long,
+destination_registered_domain,keyword,example.com
+destination_subdomain,keyword,east
+destination_top_level_domain,keyword,co.uk
+destination_user_domain,keyword,
+destination_user_email,keyword,
+destination_user_full_name,keyword,Albert Einstein
+destination_user_full_name_text,match_only_text,Albert Einstein
+destination_user_group_domain,keyword,
+destination_user_group_id,keyword,
+destination_user_group_name,keyword,
+destination_user_hash,keyword,
+destination_user_id,keyword,S-1-5-21-202424912787-2692429404-2351956786-1000
+destination_user_name,keyword,a.einstein
+destination_user_name_text,match_only_text,a.einstein
+destination_user_roles,keyword,"[""kibana_admin"", ""reporting_user""]"
+device_id,keyword,00000000-54b3-e7c7-0000-000046bffd97
+device_manufacturer,keyword,Samsung
+device_model_identifier,keyword,SM-G920F
+device_model_name,keyword,Samsung Galaxy S6
+device_serial_number,keyword,DJGAQS4CW5
+dll_code_signature_digest_algorithm,keyword,sha256
+dll_code_signature_exists,boolean,true
+dll_code_signature_flags,keyword,570522385
+dll_code_signature_signing_id,keyword,com.apple.xpc.proxy
+dll_code_signature_status,keyword,ERROR_UNTRUSTED_ROOT
+dll_code_signature_subject_name,keyword,Microsoft Corporation
+dll_code_signature_team_id,keyword,EQHXZ8M8AV
+dll_code_signature_thumbprint_sha256,keyword,c0f23a8eb1cba0ccaa88483b5a234c96e4bdfec719bf458024e68c2a8183476b
+dll_code_signature_timestamp,date,2021-01-01T12:10:30Z
+dll_code_signature_trusted,boolean,true
+dll_code_signature_valid,boolean,true
+dll_hash_cdhash,keyword,3783b4052fd474dbe30676b45c329e7a6d44acd9
+dll_hash_md5,keyword,
+dll_hash_sha1,keyword,
+dll_hash_sha256,keyword,
+dll_hash_sha384,keyword,
+dll_hash_sha512,keyword,
+dll_hash_ssdeep,keyword,
+dll_hash_tlsh,keyword,
+dll_name,keyword,kernel32.dll
+dll_origin_referrer_url,keyword,http://example.com/article1.html
+dll_origin_url,keyword,http://example.com/files/example.dll
+dll_path,keyword,C:\Windows\System32\kernel32.dll
+dll_pe_architecture,keyword,x64
+dll_pe_company,keyword,Microsoft Corporation
+dll_pe_description,keyword,Paint
+dll_pe_file_version,keyword,6.3.9600.17415
+dll_pe_go_import_hash,keyword,10bddcb4cee42080f76c88d9ff964491
+dll_pe_go_imports,flattened,
+dll_pe_go_imports_names_entropy,long,
+dll_pe_go_imports_names_var_entropy,long,
+dll_pe_go_stripped,boolean,
+dll_pe_imphash,keyword,0c6803c4e922103c4dca5963aad36ddf
+dll_pe_import_hash,keyword,d41d8cd98f00b204e9800998ecf8427e
+dll_pe_imports,flattened,
+dll_pe_imports_names_entropy,long,
+dll_pe_imports_names_var_entropy,long,
+dll_pe_original_file_name,keyword,MSPAINT.EXE
+dll_pe_pehash,keyword,73ff189b63cd6be375a7ff25179a38d347651975
+dll_pe_product,keyword,Microsoft® Windows® Operating System
+dll_pe_sections,nested,
+dll_pe_sections_entropy,long,
+dll_pe_sections_name,keyword,
+dll_pe_sections_physical_size,long,
+dll_pe_sections_var_entropy,long,
+dll_pe_sections_virtual_size,long,
+dns_answers,object,
+dns_answers_class,keyword,IN
+dns_answers_data,keyword,10.10.10.10
+dns_answers_name,keyword,www.example.com
+dns_answers_ttl,long,180
+dns_answers_type,keyword,CNAME
+dns_header_flags,keyword,"[""RD"", ""RA""]"
+dns_id,keyword,62111
+dns_op_code,keyword,QUERY
+dns_question_class,keyword,IN
+dns_question_name,keyword,www.example.com
+dns_question_registered_domain,keyword,example.com
+dns_question_subdomain,keyword,www
+dns_question_top_level_domain,keyword,co.uk
+dns_question_type,keyword,AAAA
+dns_resolved_ip,ip,"[""10.10.10.10"", ""10.10.10.11""]"
+dns_response_code,keyword,NOERROR
+dns_type,keyword,answer
+ecs_version,keyword,1.0.0
+email_attachments,nested,
+email_attachments_file_extension,keyword,txt
+email_attachments_file_hash_cdhash,keyword,3783b4052fd474dbe30676b45c329e7a6d44acd9
+email_attachments_file_hash_md5,keyword,
+email_attachments_file_hash_sha1,keyword,
+email_attachments_file_hash_sha256,keyword,
+email_attachments_file_hash_sha384,keyword,
+email_attachments_file_hash_sha512,keyword,
+email_attachments_file_hash_ssdeep,keyword,
+email_attachments_file_hash_tlsh,keyword,
+email_attachments_file_mime_type,keyword,text/plain
+email_attachments_file_name,keyword,attachment.txt
+email_attachments_file_size,long,64329
+email_bcc_address,keyword,bcc.user1@example.com
+email_cc_address,keyword,cc.user1@example.com
+email_content_type,keyword,text/plain
+email_delivery_timestamp,date,2020-11-10T22:12:34.8196921Z
+email_direction,keyword,inbound
+email_from_address,keyword,sender@example.com
+email_local_id,keyword,c26dbea0-80d5-463b-b93c-4e8b708219ce
+email_message_id,wildcard,81ce15$8r2j59@mail01.example.com
+email_origination_timestamp,date,2020-11-10T22:12:34.8196921Z
+email_reply_to_address,keyword,reply.here@example.com
+email_sender_address,keyword,
+email_subject,keyword,Please see this important message.
+email_subject_text,match_only_text,Please see this important message.
+email_to_address,keyword,user1@example.com
+email_x_mailer,keyword,Spambot v2.5
+error_code,keyword,
+error_id,keyword,
+error_message,match_only_text,
+error_stack_trace,wildcard,
+error_stack_trace_text,match_only_text,
+error_type,keyword,java.lang.NullPointerException
+event_action,keyword,user-password-change
+event_agent_id_status,keyword,verified
+event_category,keyword,authentication
+event_code,keyword,4648
+event_created,date,2016-05-23T08:05:34.857Z
+event_dataset,keyword,apache.access
+event_duration,long,
+event_end,date,
+event_hash,keyword,123456789012345678901234567890ABCD
+event_id,keyword,8a4f500d
+event_ingested,date,2016-05-23T08:05:35.101Z
+event_kind,keyword,alert
+event_module,keyword,apache
+event_original,keyword,Sep 19 08:26:10 host CEF:0&#124;Security&#124; threatmanager&#124;1.0&#124;100&#124; worm successfully stopped&#124;10&#124;src=10.0.0.1 dst=2.1.2.2spt=1232
+event_outcome,keyword,success
+event_provider,keyword,kernel
+event_reason,keyword,Terminated an unexpected process
+event_reference,keyword,https://system.example.com/event/#0001234
+event_risk_score,float,
+event_risk_score_norm,float,
+event_sequence,long,
+event_severity,long,7
+event_start,date,
+event_timezone,keyword,
+event_type,keyword,
+event_url,keyword,https://mysystem.example.com/alert/5271dedb-f5b0-4218-87f0-4ac4870a38fe
+faas_coldstart,boolean,
+faas_execution,keyword,af9d5aa4-a685-4c5f-a22b-444f80b3cc28
+faas_id,keyword,arn:aws:lambda:us-west-2:123456789012:function:my-function
+faas_name,keyword,my-function
+faas_trigger_request_id,keyword,123456789
+faas_trigger_type,keyword,http
+faas_version,keyword,123
+file_accessed,date,
+file_attributes,keyword,"[""readonly"", ""system""]"
+file_code_signature_digest_algorithm,keyword,sha256
+file_code_signature_exists,boolean,true
+file_code_signature_flags,keyword,570522385
+file_code_signature_signing_id,keyword,com.apple.xpc.proxy
+file_code_signature_status,keyword,ERROR_UNTRUSTED_ROOT
+file_code_signature_subject_name,keyword,Microsoft Corporation
+file_code_signature_team_id,keyword,EQHXZ8M8AV
+file_code_signature_thumbprint_sha256,keyword,c0f23a8eb1cba0ccaa88483b5a234c96e4bdfec719bf458024e68c2a8183476b
+file_code_signature_timestamp,date,2021-01-01T12:10:30Z
+file_code_signature_trusted,boolean,true
+file_code_signature_valid,boolean,true
+file_created,date,
+file_ctime,date,
+file_device,keyword,sda
+file_directory,keyword,/home/alice
+file_drive_letter,keyword,C
+file_elf_architecture,keyword,x86-64
+file_elf_byte_order,keyword,Little Endian
+file_elf_cpu_type,keyword,Intel
+file_elf_creation_date,date,
+file_elf_exports,flattened,
+file_elf_go_import_hash,keyword,10bddcb4cee42080f76c88d9ff964491
+file_elf_go_imports,flattened,
+file_elf_go_imports_names_entropy,long,
+file_elf_go_imports_names_var_entropy,long,
+file_elf_go_stripped,boolean,
+file_elf_header_abi_version,keyword,
+file_elf_header_class,keyword,
+file_elf_header_data,keyword,
+file_elf_header_entrypoint,long,
+file_elf_header_object_version,keyword,
+file_elf_header_os_abi,keyword,
+file_elf_header_type,keyword,
+file_elf_header_version,keyword,
+file_elf_import_hash,keyword,d41d8cd98f00b204e9800998ecf8427e
+file_elf_imports,flattened,
+file_elf_imports_names_entropy,long,
+file_elf_imports_names_var_entropy,long,
+file_elf_sections,nested,
+file_elf_sections_chi2,long,
+file_elf_sections_entropy,long,
+file_elf_sections_flags,keyword,
+file_elf_sections_name,keyword,
+file_elf_sections_physical_offset,keyword,
+file_elf_sections_physical_size,long,
+file_elf_sections_type,keyword,
+file_elf_sections_var_entropy,long,
+file_elf_sections_virtual_address,long,
+file_elf_sections_virtual_size,long,
+file_elf_segments,nested,
+file_elf_segments_sections,keyword,
+file_elf_segments_type,keyword,
+file_elf_shared_libraries,keyword,
+file_elf_telfhash,keyword,
+file_extension,keyword,png
+file_fork_name,keyword,Zone.Identifer
+file_gid,keyword,1001
+file_group,keyword,alice
+file_hash_cdhash,keyword,3783b4052fd474dbe30676b45c329e7a6d44acd9
+file_hash_md5,keyword,
+file_hash_sha1,keyword,
+file_hash_sha256,keyword,
+file_hash_sha384,keyword,
+file_hash_sha512,keyword,
+file_hash_ssdeep,keyword,
+file_hash_tlsh,keyword,
+file_inode,keyword,256383
+file_macho_go_import_hash,keyword,10bddcb4cee42080f76c88d9ff964491
+file_macho_go_imports,flattened,
+file_macho_go_imports_names_entropy,long,
+file_macho_go_imports_names_var_entropy,long,
+file_macho_go_stripped,boolean,
+file_macho_import_hash,keyword,d41d8cd98f00b204e9800998ecf8427e
+file_macho_imports,flattened,
+file_macho_imports_names_entropy,long,
+file_macho_imports_names_var_entropy,long,
+file_macho_sections,nested,
+file_macho_sections_entropy,long,
+file_macho_sections_name,keyword,
+file_macho_sections_physical_size,long,
+file_macho_sections_var_entropy,long,
+file_macho_sections_virtual_size,long,
+file_macho_symhash,keyword,d3ccf195b62a9279c3c19af1080497ec
+file_mime_type,keyword,
+file_mode,keyword,0640
+file_mtime,date,
+file_name,keyword,example.png
+file_origin_referrer_url,keyword,http://example.com/article1.html
+file_origin_url,keyword,http://example.com/imgs/article1_img1.jpg
+file_owner,keyword,alice
+file_path,keyword,/home/alice/example.png
+file_path_text,match_only_text,/home/alice/example.png
+file_pe_architecture,keyword,x64
+file_pe_company,keyword,Microsoft Corporation
+file_pe_description,keyword,Paint
+file_pe_file_version,keyword,6.3.9600.17415
+file_pe_go_import_hash,keyword,10bddcb4cee42080f76c88d9ff964491
+file_pe_go_imports,flattened,
+file_pe_go_imports_names_entropy,long,
+file_pe_go_imports_names_var_entropy,long,
+file_pe_go_stripped,boolean,
+file_pe_imphash,keyword,0c6803c4e922103c4dca5963aad36ddf
+file_pe_import_hash,keyword,d41d8cd98f00b204e9800998ecf8427e
+file_pe_imports,flattened,
+file_pe_imports_names_entropy,long,
+file_pe_imports_names_var_entropy,long,
+file_pe_original_file_name,keyword,MSPAINT.EXE
+file_pe_pehash,keyword,73ff189b63cd6be375a7ff25179a38d347651975
+file_pe_product,keyword,Microsoft® Windows® Operating System
+file_pe_sections,nested,
+file_pe_sections_entropy,long,
+file_pe_sections_name,keyword,
+file_pe_sections_physical_size,long,
+file_pe_sections_var_entropy,long,
+file_pe_sections_virtual_size,long,
+file_size,long,16384
+file_target_path,keyword,
+file_target_path_text,match_only_text,
+file_type,keyword,file
+file_uid,keyword,1001
+file_x509_alternative_names,keyword,*.binaryflux.ai
+file_x509_issuer_common_name,keyword,Example SHA2 High Assurance Server CA
+file_x509_issuer_country,keyword,US
+file_x509_issuer_distinguished_name,keyword,"C=US, O=Example Inc, OU=www.example.com, CN=Example SHA2 High Assurance Server CA"
+file_x509_issuer_locality,keyword,Mountain View
+file_x509_issuer_organization,keyword,Example Inc
+file_x509_issuer_organizational_unit,keyword,www.example.com
+file_x509_issuer_state_or_province,keyword,California
+file_x509_not_after,date,2020-07-16T03:15:39Z
+file_x509_not_before,date,2019-08-16T01:40:25Z
+file_x509_public_key_algorithm,keyword,RSA
+file_x509_public_key_curve,keyword,nistp521
+file_x509_public_key_exponent,long,65537
+file_x509_public_key_size,long,2048
+file_x509_serial_number,keyword,55FBB9C7DEBF09809D12CCAA
+file_x509_signature_algorithm,keyword,SHA256-RSA
+file_x509_subject_common_name,keyword,shared.global.example.net
+file_x509_subject_country,keyword,US
+file_x509_subject_distinguished_name,keyword,"C=US, ST=California, L=San Francisco, O=Example, Inc., CN=shared.global.example.net"
+file_x509_subject_locality,keyword,San Francisco
+file_x509_subject_organization,keyword,"Example, Inc."
+file_x509_subject_organizational_unit,keyword,
+file_x509_subject_state_or_province,keyword,California
+file_x509_version_number,keyword,3
+gen_ai_agent_description,keyword,Helps with math problems; Generates fiction stories
+gen_ai_agent_id,keyword,asst_5j66UpCpwteGg4YSxUnt7lPY
+gen_ai_agent_name,keyword,Math Tutor; Fiction Writer
+gen_ai_operation_name,keyword,chat; text_completion; embeddings
+gen_ai_output_type,keyword,text; json; image
+gen_ai_request_choice_count,integer,3
+gen_ai_request_encoding_formats,nested,"[""float"", ""binary""]"
+gen_ai_request_frequency_penalty,double,0.1
+gen_ai_request_max_tokens,integer,100
+gen_ai_request_model,keyword,gpt-4
+gen_ai_request_presence_penalty,double,0.1
+gen_ai_request_seed,integer,100
+gen_ai_request_stop_sequences,nested,"[""forest"", ""lived""]"
+gen_ai_request_temperature,double,0.0
+gen_ai_request_top_k,double,1.0
+gen_ai_request_top_p,double,1.0
+gen_ai_response_finish_reasons,nested,"[""stop"", ""length""]"
+gen_ai_response_id,keyword,chatcmpl-123
+gen_ai_response_model,keyword,gpt-4-0613
+gen_ai_system,keyword,openai
+gen_ai_token_type,keyword,input; output
+gen_ai_tool_call_id,keyword,call_mszuSIzqtI65i1wAUOE8w5H4
+gen_ai_tool_name,keyword,Flights
+gen_ai_tool_type,keyword,function; extension; datastore
+gen_ai_usage_input_tokens,integer,100
+gen_ai_usage_output_tokens,integer,180
+group_domain,keyword,
+group_id,keyword,
+group_name,keyword,
+host_architecture,keyword,x86_64
+host_boot_id,keyword,88a1f0ed-5ae5-41ee-af6b-41921c311872
+host_cpu_usage,scaled_float,
+host_disk_read_bytes,long,
+host_disk_write_bytes,long,
+host_domain,keyword,CONTOSO
+host_geo_city_name,keyword,Montreal
+host_geo_continent_code,keyword,
+host_geo_continent_name,keyword,North America
+host_geo_country_iso_code,keyword,CA
+host_geo_country_name,keyword,Canada
+host_geo_location,geo_point,"{ ""lon"": -73.614830, ""lat"": 45.505918 }"
+host_geo_name,keyword,boston-dc
+host_geo_postal_code,keyword,94040
+host_geo_region_iso_code,keyword,CA-QC
+host_geo_region_name,keyword,Quebec
+host_geo_timezone,keyword,America/Argentina/Buenos_Aires
+host_hostname,keyword,
+host_id,keyword,
+host_ip,ip,
+host_mac,keyword,"[""00-00-5E-00-53-23"", ""00-00-5E-00-53-24""]"
+host_name,keyword,
+host_network_egress_bytes,long,
+host_network_egress_packets,long,
+host_network_ingress_bytes,long,
+host_network_ingress_packets,long,
+host_os_family,keyword,debian
+host_os_full,keyword,Mac OS Mojave
+host_os_full_text,match_only_text,Mac OS Mojave
+host_os_kernel,keyword,4.4.0-112-generic
+host_os_name,keyword,Mac OS X
+host_os_name_text,match_only_text,Mac OS X
+host_os_platform,keyword,darwin
+host_os_type,keyword,macos
+host_os_version,keyword,10.14.1
+host_pid_ns_ino,keyword,256383
+host_risk_calculated_level,keyword,High
+host_risk_calculated_score,float,880.73
+host_risk_calculated_score_norm,float,88.73
+host_risk_static_level,keyword,High
+host_risk_static_score,float,830.0
+host_risk_static_score_norm,float,83.0
+host_type,keyword,
+host_uptime,long,1325
+http_request_body_bytes,long,887
+http_request_body_content,wildcard,Hello world
+http_request_body_content_text,match_only_text,Hello world
+http_request_bytes,long,1437
+http_request_id,keyword,123e4567-e89b-12d3-a456-426614174000
+http_request_method,keyword,POST
+http_request_mime_type,keyword,image/gif
+http_request_referrer,keyword,https://blog.example.com/
+http_response_body_bytes,long,887
+http_response_body_content,wildcard,Hello world
+http_response_body_content_text,match_only_text,Hello world
+http_response_bytes,long,1437
+http_response_mime_type,keyword,image/gif
+http_response_status_code,long,404
+http_version,keyword,1.1
+log_file_path,keyword,/var/log/fun-times.log
+log_level,keyword,error
+log_logger,keyword,org.binaryfluxsearch.bootstrap.Bootstrap
+log_origin_file_line,long,42
+log_origin_file_name,keyword,Bootstrap.java
+log_origin_function,keyword,init
+log_syslog,object,
+log_syslog_appname,keyword,sshd
+log_syslog_facility_code,long,23
+log_syslog_facility_name,keyword,local7
+log_syslog_hostname,keyword,example-host
+log_syslog_msgid,keyword,ID47
+log_syslog_priority,long,135
+log_syslog_procid,keyword,12345
+log_syslog_severity_code,long,3
+log_syslog_severity_name,keyword,Error
+log_syslog_structured_data,flattened,
+log_syslog_version,keyword,1
+network_application,keyword,aim
+network_bytes,long,368
+network_community_id,keyword,1:hO+sN4H+MG5MY/8hIrXPqc4ZQz0=
+network_direction,keyword,inbound
+network_forwarded_ip,ip,192.1.1.2
+network_iana_number,keyword,6
+network_inner,object,
+network_inner_vlan_id,keyword,10
+network_inner_vlan_name,keyword,outside
+network_name,keyword,Guest Wifi
+network_packets,long,24
+network_protocol,keyword,http
+network_transport,keyword,tcp
+network_type,keyword,ipv4
+network_vlan_id,keyword,10
+network_vlan_name,keyword,outside
+observer_egress,object,
+observer_egress_interface_alias,keyword,outside
+observer_egress_interface_id,keyword,10
+observer_egress_interface_name,keyword,eth0
+observer_egress_vlan_id,keyword,10
+observer_egress_vlan_name,keyword,outside
+observer_egress_zone,keyword,Public_Internet
+observer_geo_city_name,keyword,Montreal
+observer_geo_continent_code,keyword,
+observer_geo_continent_name,keyword,North America
+observer_geo_country_iso_code,keyword,CA
+observer_geo_country_name,keyword,Canada
+observer_geo_location,geo_point,"{ ""lon"": -73.614830, ""lat"": 45.505918 }"
+observer_geo_name,keyword,boston-dc
+observer_geo_postal_code,keyword,94040
+observer_geo_region_iso_code,keyword,CA-QC
+observer_geo_region_name,keyword,Quebec
+observer_geo_timezone,keyword,America/Argentina/Buenos_Aires
+observer_hostname,keyword,
+observer_ingress,object,
+observer_ingress_interface_alias,keyword,outside
+observer_ingress_interface_id,keyword,10
+observer_ingress_interface_name,keyword,eth0
+observer_ingress_vlan_id,keyword,10
+observer_ingress_vlan_name,keyword,outside
+observer_ingress_zone,keyword,DMZ
+observer_ip,ip,
+observer_mac,keyword,"[""00-00-5E-00-53-23"", ""00-00-5E-00-53-24""]"
+observer_name,keyword,1_proxySG
+observer_os_family,keyword,debian
+observer_os_full,keyword,Mac OS Mojave
+observer_os_full_text,match_only_text,Mac OS Mojave
+observer_os_kernel,keyword,4.4.0-112-generic
+observer_os_name,keyword,Mac OS X
+observer_os_name_text,match_only_text,Mac OS X
+observer_os_platform,keyword,darwin
+observer_os_type,keyword,macos
+observer_os_version,keyword,10.14.1
+observer_product,keyword,s200
+observer_serial_number,keyword,
+observer_type,keyword,firewall
+observer_vendor,keyword,Symantec
+observer_version,keyword,
+orchestrator_api_version,keyword,v1beta1
+orchestrator_cluster_id,keyword,
+orchestrator_cluster_name,keyword,
+orchestrator_cluster_url,keyword,
+orchestrator_cluster_version,keyword,
+orchestrator_namespace,keyword,kube-system
+orchestrator_organization,keyword,binaryflux
+orchestrator_resource_annotation,keyword,"['key1:value1', 'key2:value2', 'key3:value3']"
+orchestrator_resource_id,keyword,
+orchestrator_resource_ip,ip,
+orchestrator_resource_label,keyword,"['key1:value1', 'key2:value2', 'key3:value3']"
+orchestrator_resource_name,keyword,test-pod-cdcws
+orchestrator_resource_parent_type,keyword,DaemonSet
+orchestrator_resource_type,keyword,service
+orchestrator_type,keyword,kubernetes
+organization_id,keyword,
+organization_name,keyword,
+organization_name_text,match_only_text,
+package_architecture,keyword,x86_64
+package_build_version,keyword,36f4f7e89dd61b0988b12ee000b98966867710cd
+package_checksum,keyword,68b329da9893e34099c7d8ad5cb9c940
+package_description,keyword,Open source programming language to build simple/reliable/efficient software.
+package_install_scope,keyword,global
+package_installed,date,
+package_license,keyword,Apache License 2.0
+package_name,keyword,go
+package_path,keyword,/usr/local/Cellar/go/1.12.9/
+package_reference,keyword,https://golang.org
+package_size,long,62231
+package_type,keyword,rpm
+package_version,keyword,1.12.9
+process_args,keyword,"[""/usr/bin/ssh"", ""-l"", ""user"", ""10.0.0.16""]"
+process_args_count,long,4
+process_code_signature_digest_algorithm,keyword,sha256
+process_code_signature_exists,boolean,true
+process_code_signature_flags,keyword,570522385
+process_code_signature_signing_id,keyword,com.apple.xpc.proxy
+process_code_signature_status,keyword,ERROR_UNTRUSTED_ROOT
+process_code_signature_subject_name,keyword,Microsoft Corporation
+process_code_signature_team_id,keyword,EQHXZ8M8AV
+process_code_signature_thumbprint_sha256,keyword,c0f23a8eb1cba0ccaa88483b5a234c96e4bdfec719bf458024e68c2a8183476b
+process_code_signature_timestamp,date,2021-01-01T12:10:30Z
+process_code_signature_trusted,boolean,true
+process_code_signature_valid,boolean,true
+process_command_line,wildcard,/usr/bin/ssh -l user 10.0.0.16
+process_command_line_text,match_only_text,/usr/bin/ssh -l user 10.0.0.16
+process_elf_architecture,keyword,x86-64
+process_elf_byte_order,keyword,Little Endian
+process_elf_cpu_type,keyword,Intel
+process_elf_creation_date,date,
+process_elf_exports,flattened,
+process_elf_go_import_hash,keyword,10bddcb4cee42080f76c88d9ff964491
+process_elf_go_imports,flattened,
+process_elf_go_imports_names_entropy,long,
+process_elf_go_imports_names_var_entropy,long,
+process_elf_go_stripped,boolean,
+process_elf_header_abi_version,keyword,
+process_elf_header_class,keyword,
+process_elf_header_data,keyword,
+process_elf_header_entrypoint,long,
+process_elf_header_object_version,keyword,
+process_elf_header_os_abi,keyword,
+process_elf_header_type,keyword,
+process_elf_header_version,keyword,
+process_elf_import_hash,keyword,d41d8cd98f00b204e9800998ecf8427e
+process_elf_imports,flattened,
+process_elf_imports_names_entropy,long,
+process_elf_imports_names_var_entropy,long,
+process_elf_sections,nested,
+process_elf_sections_chi2,long,
+process_elf_sections_entropy,long,
+process_elf_sections_flags,keyword,
+process_elf_sections_name,keyword,
+process_elf_sections_physical_offset,keyword,
+process_elf_sections_physical_size,long,
+process_elf_sections_type,keyword,
+process_elf_sections_var_entropy,long,
+process_elf_sections_virtual_address,long,
+process_elf_sections_virtual_size,long,
+process_elf_segments,nested,
+process_elf_segments_sections,keyword,
+process_elf_segments_type,keyword,
+process_elf_shared_libraries,keyword,
+process_elf_telfhash,keyword,
+process_end,date,2016-05-23T08:05:34.853Z
+process_entity_id,keyword,c2c455d9f99375d
+process_entry_leader_args,keyword,"[""/usr/bin/ssh"", ""-l"", ""user"", ""10.0.0.16""]"
+process_entry_leader_args_count,long,4
+process_entry_leader_attested_groups_name,keyword,
+process_entry_leader_attested_user_id,keyword,S-1-5-21-202424912787-2692429404-2351956786-1000
+process_entry_leader_attested_user_name,keyword,a.einstein
+process_entry_leader_attested_user_name_text,match_only_text,a.einstein
+process_entry_leader_command_line,wildcard,/usr/bin/ssh -l user 10.0.0.16
+process_entry_leader_command_line_text,match_only_text,/usr/bin/ssh -l user 10.0.0.16
+process_entry_leader_entity_id,keyword,c2c455d9f99375d
+process_entry_leader_entry_meta_source_ip,ip,
+process_entry_leader_entry_meta_type,keyword,
+process_entry_leader_executable,keyword,/usr/bin/ssh
+process_entry_leader_executable_text,match_only_text,/usr/bin/ssh
+process_entry_leader_group_id,keyword,
+process_entry_leader_group_name,keyword,
+process_entry_leader_interactive,boolean,True
+process_entry_leader_name,keyword,ssh
+process_entry_leader_name_text,match_only_text,ssh
+process_entry_leader_parent_entity_id,keyword,c2c455d9f99375d
+process_entry_leader_parent_pid,long,4242
+process_entry_leader_parent_session_leader_entity_id,keyword,c2c455d9f99375d
+process_entry_leader_parent_session_leader_pid,long,4242
+process_entry_leader_parent_session_leader_start,date,2016-05-23T08:05:34.853Z
+process_entry_leader_parent_session_leader_vpid,long,4242
+process_entry_leader_parent_start,date,2016-05-23T08:05:34.853Z
+process_entry_leader_parent_vpid,long,4242
+process_entry_leader_pid,long,4242
+process_entry_leader_real_group_id,keyword,
+process_entry_leader_real_group_name,keyword,
+process_entry_leader_real_user_id,keyword,S-1-5-21-202424912787-2692429404-2351956786-1000
+process_entry_leader_real_user_name,keyword,a.einstein
+process_entry_leader_real_user_name_text,match_only_text,a.einstein
+process_entry_leader_same_as_process,boolean,True
+process_entry_leader_saved_group_id,keyword,
+process_entry_leader_saved_group_name,keyword,
+process_entry_leader_saved_user_id,keyword,S-1-5-21-202424912787-2692429404-2351956786-1000
+process_entry_leader_saved_user_name,keyword,a.einstein
+process_entry_leader_saved_user_name_text,match_only_text,a.einstein
+process_entry_leader_start,date,2016-05-23T08:05:34.853Z
+process_entry_leader_supplemental_groups_id,keyword,
+process_entry_leader_supplemental_groups_name,keyword,
+process_entry_leader_tty,object,
+process_entry_leader_tty_char_device_major,long,4
+process_entry_leader_tty_char_device_minor,long,1
+process_entry_leader_user_id,keyword,S-1-5-21-202424912787-2692429404-2351956786-1000
+process_entry_leader_user_name,keyword,a.einstein
+process_entry_leader_user_name_text,match_only_text,a.einstein
+process_entry_leader_vpid,long,4242
+process_entry_leader_working_directory,keyword,/home/alice
+process_entry_leader_working_directory_text,match_only_text,/home/alice
+process_env_vars,keyword,"[""PATH=/usr/local/bin:/usr/bin"", ""USER=ubuntu""]"
+process_executable,keyword,/usr/bin/ssh
+process_executable_text,match_only_text,/usr/bin/ssh
+process_exit_code,long,137
+process_group_id,keyword,
+process_group_name,keyword,
+process_group_leader_args,keyword,"[""/usr/bin/ssh"", ""-l"", ""user"", ""10.0.0.16""]"
+process_group_leader_args_count,long,4
+process_group_leader_command_line,wildcard,/usr/bin/ssh -l user 10.0.0.16
+process_group_leader_command_line_text,match_only_text,/usr/bin/ssh -l user 10.0.0.16
+process_group_leader_entity_id,keyword,c2c455d9f99375d
+process_group_leader_executable,keyword,/usr/bin/ssh
+process_group_leader_executable_text,match_only_text,/usr/bin/ssh
+process_group_leader_group_id,keyword,
+process_group_leader_group_name,keyword,
+process_group_leader_interactive,boolean,True
+process_group_leader_name,keyword,ssh
+process_group_leader_name_text,match_only_text,ssh
+process_group_leader_pid,long,4242
+process_group_leader_real_group_id,keyword,
+process_group_leader_real_group_name,keyword,
+process_group_leader_real_user_id,keyword,S-1-5-21-202424912787-2692429404-2351956786-1000
+process_group_leader_real_user_name,keyword,a.einstein
+process_group_leader_real_user_name_text,match_only_text,a.einstein
+process_group_leader_same_as_process,boolean,True
+process_group_leader_saved_group_id,keyword,
+process_group_leader_saved_group_name,keyword,
+process_group_leader_saved_user_id,keyword,S-1-5-21-202424912787-2692429404-2351956786-1000
+process_group_leader_saved_user_name,keyword,a.einstein
+process_group_leader_saved_user_name_text,match_only_text,a.einstein
+process_group_leader_start,date,2016-05-23T08:05:34.853Z
+process_group_leader_supplemental_groups_id,keyword,
+process_group_leader_supplemental_groups_name,keyword,
+process_group_leader_tty,object,
+process_group_leader_tty_char_device_major,long,4
+process_group_leader_tty_char_device_minor,long,1
+process_group_leader_user_id,keyword,S-1-5-21-202424912787-2692429404-2351956786-1000
+process_group_leader_user_name,keyword,a.einstein
+process_group_leader_user_name_text,match_only_text,a.einstein
+process_group_leader_vpid,long,4242
+process_group_leader_working_directory,keyword,/home/alice
+process_group_leader_working_directory_text,match_only_text,/home/alice
+process_hash_cdhash,keyword,3783b4052fd474dbe30676b45c329e7a6d44acd9
+process_hash_md5,keyword,
+process_hash_sha1,keyword,
+process_hash_sha256,keyword,
+process_hash_sha384,keyword,
+process_hash_sha512,keyword,
+process_hash_ssdeep,keyword,
+process_hash_tlsh,keyword,
+process_interactive,boolean,True
+process_io,object,
+process_io_bytes_skipped,object,
+process_io_bytes_skipped_length,long,
+process_io_bytes_skipped_offset,long,
+process_io_max_bytes_per_process_exceeded,boolean,
+process_io_text,wildcard,
+process_io_total_bytes_captured,long,
+process_io_total_bytes_skipped,long,
+process_io_type,keyword,
+process_macho_go_import_hash,keyword,10bddcb4cee42080f76c88d9ff964491
+process_macho_go_imports,flattened,
+process_macho_go_imports_names_entropy,long,
+process_macho_go_imports_names_var_entropy,long,
+process_macho_go_stripped,boolean,
+process_macho_import_hash,keyword,d41d8cd98f00b204e9800998ecf8427e
+process_macho_imports,flattened,
+process_macho_imports_names_entropy,long,
+process_macho_imports_names_var_entropy,long,
+process_macho_sections,nested,
+process_macho_sections_entropy,long,
+process_macho_sections_name,keyword,
+process_macho_sections_physical_size,long,
+process_macho_sections_var_entropy,long,
+process_macho_sections_virtual_size,long,
+process_macho_symhash,keyword,d3ccf195b62a9279c3c19af1080497ec
+process_name,keyword,ssh
+process_name_text,match_only_text,ssh
+process_parent_args,keyword,"[""/usr/bin/ssh"", ""-l"", ""user"", ""10.0.0.16""]"
+process_parent_args_count,long,4
+process_parent_code_signature_digest_algorithm,keyword,sha256
+process_parent_code_signature_exists,boolean,true
+process_parent_code_signature_flags,keyword,570522385
+process_parent_code_signature_signing_id,keyword,com.apple.xpc.proxy
+process_parent_code_signature_status,keyword,ERROR_UNTRUSTED_ROOT
+process_parent_code_signature_subject_name,keyword,Microsoft Corporation
+process_parent_code_signature_team_id,keyword,EQHXZ8M8AV
+process_parent_code_signature_thumbprint_sha256,keyword,c0f23a8eb1cba0ccaa88483b5a234c96e4bdfec719bf458024e68c2a8183476b
+process_parent_code_signature_timestamp,date,2021-01-01T12:10:30Z
+process_parent_code_signature_trusted,boolean,true
+process_parent_code_signature_valid,boolean,true
+process_parent_command_line,wildcard,/usr/bin/ssh -l user 10.0.0.16
+process_parent_command_line_text,match_only_text,/usr/bin/ssh -l user 10.0.0.16
+process_parent_elf_architecture,keyword,x86-64
+process_parent_elf_byte_order,keyword,Little Endian
+process_parent_elf_cpu_type,keyword,Intel
+process_parent_elf_creation_date,date,
+process_parent_elf_exports,flattened,
+process_parent_elf_go_import_hash,keyword,10bddcb4cee42080f76c88d9ff964491
+process_parent_elf_go_imports,flattened,
+process_parent_elf_go_imports_names_entropy,long,
+process_parent_elf_go_imports_names_var_entropy,long,
+process_parent_elf_go_stripped,boolean,
+process_parent_elf_header_abi_version,keyword,
+process_parent_elf_header_class,keyword,
+process_parent_elf_header_data,keyword,
+process_parent_elf_header_entrypoint,long,
+process_parent_elf_header_object_version,keyword,
+process_parent_elf_header_os_abi,keyword,
+process_parent_elf_header_type,keyword,
+process_parent_elf_header_version,keyword,
+process_parent_elf_import_hash,keyword,d41d8cd98f00b204e9800998ecf8427e
+process_parent_elf_imports,flattened,
+process_parent_elf_imports_names_entropy,long,
+process_parent_elf_imports_names_var_entropy,long,
+process_parent_elf_sections,nested,
+process_parent_elf_sections_chi2,long,
+process_parent_elf_sections_entropy,long,
+process_parent_elf_sections_flags,keyword,
+process_parent_elf_sections_name,keyword,
+process_parent_elf_sections_physical_offset,keyword,
+process_parent_elf_sections_physical_size,long,
+process_parent_elf_sections_type,keyword,
+process_parent_elf_sections_var_entropy,long,
+process_parent_elf_sections_virtual_address,long,
+process_parent_elf_sections_virtual_size,long,
+process_parent_elf_segments,nested,
+process_parent_elf_segments_sections,keyword,
+process_parent_elf_segments_type,keyword,
+process_parent_elf_shared_libraries,keyword,
+process_parent_elf_telfhash,keyword,
+process_parent_end,date,2016-05-23T08:05:34.853Z
+process_parent_entity_id,keyword,c2c455d9f99375d
+process_parent_executable,keyword,/usr/bin/ssh
+process_parent_executable_text,match_only_text,/usr/bin/ssh
+process_parent_exit_code,long,137
+process_parent_group_id,keyword,
+process_parent_group_name,keyword,
+process_parent_group_leader_entity_id,keyword,c2c455d9f99375d
+process_parent_group_leader_pid,long,4242
+process_parent_group_leader_start,date,2016-05-23T08:05:34.853Z
+process_parent_group_leader_vpid,long,4242
+process_parent_hash_cdhash,keyword,3783b4052fd474dbe30676b45c329e7a6d44acd9
+process_parent_hash_md5,keyword,
+process_parent_hash_sha1,keyword,
+process_parent_hash_sha256,keyword,
+process_parent_hash_sha384,keyword,
+process_parent_hash_sha512,keyword,
+process_parent_hash_ssdeep,keyword,
+process_parent_hash_tlsh,keyword,
+process_parent_interactive,boolean,True
+process_parent_macho_go_import_hash,keyword,10bddcb4cee42080f76c88d9ff964491
+process_parent_macho_go_imports,flattened,
+process_parent_macho_go_imports_names_entropy,long,
+process_parent_macho_go_imports_names_var_entropy,long,
+process_parent_macho_go_stripped,boolean,
+process_parent_macho_import_hash,keyword,d41d8cd98f00b204e9800998ecf8427e
+process_parent_macho_imports,flattened,
+process_parent_macho_imports_names_entropy,long,
+process_parent_macho_imports_names_var_entropy,long,
+process_parent_macho_sections,nested,
+process_parent_macho_sections_entropy,long,
+process_parent_macho_sections_name,keyword,
+process_parent_macho_sections_physical_size,long,
+process_parent_macho_sections_var_entropy,long,
+process_parent_macho_sections_virtual_size,long,
+process_parent_macho_symhash,keyword,d3ccf195b62a9279c3c19af1080497ec
+process_parent_name,keyword,ssh
+process_parent_name_text,match_only_text,ssh
+process_parent_pe_architecture,keyword,x64
+process_parent_pe_company,keyword,Microsoft Corporation
+process_parent_pe_description,keyword,Paint
+process_parent_pe_file_version,keyword,6.3.9600.17415
+process_parent_pe_go_import_hash,keyword,10bddcb4cee42080f76c88d9ff964491
+process_parent_pe_go_imports,flattened,
+process_parent_pe_go_imports_names_entropy,long,
+process_parent_pe_go_imports_names_var_entropy,long,
+process_parent_pe_go_stripped,boolean,
+process_parent_pe_imphash,keyword,0c6803c4e922103c4dca5963aad36ddf
+process_parent_pe_import_hash,keyword,d41d8cd98f00b204e9800998ecf8427e
+process_parent_pe_imports,flattened,
+process_parent_pe_imports_names_entropy,long,
+process_parent_pe_imports_names_var_entropy,long,
+process_parent_pe_original_file_name,keyword,MSPAINT.EXE
+process_parent_pe_pehash,keyword,73ff189b63cd6be375a7ff25179a38d347651975
+process_parent_pe_product,keyword,Microsoft® Windows® Operating System
+process_parent_pe_sections,nested,
+process_parent_pe_sections_entropy,long,
+process_parent_pe_sections_name,keyword,
+process_parent_pe_sections_physical_size,long,
+process_parent_pe_sections_var_entropy,long,
+process_parent_pe_sections_virtual_size,long,
+process_parent_pid,long,4242
+process_parent_real_group_id,keyword,
+process_parent_real_group_name,keyword,
+process_parent_real_user_id,keyword,S-1-5-21-202424912787-2692429404-2351956786-1000
+process_parent_real_user_name,keyword,a.einstein
+process_parent_real_user_name_text,match_only_text,a.einstein
+process_parent_saved_group_id,keyword,
+process_parent_saved_group_name,keyword,
+process_parent_saved_user_id,keyword,S-1-5-21-202424912787-2692429404-2351956786-1000
+process_parent_saved_user_name,keyword,a.einstein
+process_parent_saved_user_name_text,match_only_text,a.einstein
+process_parent_start,date,2016-05-23T08:05:34.853Z
+process_parent_supplemental_groups_id,keyword,
+process_parent_supplemental_groups_name,keyword,
+process_parent_thread_capabilities_effective,keyword,"[""CAP_BPF"", ""CAP_SYS_ADMIN""]"
+process_parent_thread_capabilities_permitted,keyword,"[""CAP_BPF"", ""CAP_SYS_ADMIN""]"
+process_parent_thread_id,long,4242
+process_parent_thread_name,keyword,thread-0
+process_parent_title,keyword,
+process_parent_title_text,match_only_text,
+process_parent_tty,object,
+process_parent_tty_char_device_major,long,4
+process_parent_tty_char_device_minor,long,1
+process_parent_uptime,long,1325
+process_parent_user_id,keyword,S-1-5-21-202424912787-2692429404-2351956786-1000
+process_parent_user_name,keyword,a.einstein
+process_parent_user_name_text,match_only_text,a.einstein
+process_parent_vpid,long,4242
+process_parent_working_directory,keyword,/home/alice
+process_parent_working_directory_text,match_only_text,/home/alice
+process_pe_architecture,keyword,x64
+process_pe_company,keyword,Microsoft Corporation
+process_pe_description,keyword,Paint
+process_pe_file_version,keyword,6.3.9600.17415
+process_pe_go_import_hash,keyword,10bddcb4cee42080f76c88d9ff964491
+process_pe_go_imports,flattened,
+process_pe_go_imports_names_entropy,long,
+process_pe_go_imports_names_var_entropy,long,
+process_pe_go_stripped,boolean,
+process_pe_imphash,keyword,0c6803c4e922103c4dca5963aad36ddf
+process_pe_import_hash,keyword,d41d8cd98f00b204e9800998ecf8427e
+process_pe_imports,flattened,
+process_pe_imports_names_entropy,long,
+process_pe_imports_names_var_entropy,long,
+process_pe_original_file_name,keyword,MSPAINT.EXE
+process_pe_pehash,keyword,73ff189b63cd6be375a7ff25179a38d347651975
+process_pe_product,keyword,Microsoft® Windows® Operating System
+process_pe_sections,nested,
+process_pe_sections_entropy,long,
+process_pe_sections_name,keyword,
+process_pe_sections_physical_size,long,
+process_pe_sections_var_entropy,long,
+process_pe_sections_virtual_size,long,
+process_pid,long,4242
+process_previous_args,keyword,"[""/usr/bin/ssh"", ""-l"", ""user"", ""10.0.0.16""]"
+process_previous_args_count,long,4
+process_previous_executable,keyword,/usr/bin/ssh
+process_previous_executable_text,match_only_text,/usr/bin/ssh
+process_real_group_id,keyword,
+process_real_group_name,keyword,
+process_real_user_id,keyword,S-1-5-21-202424912787-2692429404-2351956786-1000
+process_real_user_name,keyword,a.einstein
+process_real_user_name_text,match_only_text,a.einstein
+process_saved_group_id,keyword,
+process_saved_group_name,keyword,
+process_saved_user_id,keyword,S-1-5-21-202424912787-2692429404-2351956786-1000
+process_saved_user_name,keyword,a.einstein
+process_saved_user_name_text,match_only_text,a.einstein
+process_session_leader_args,keyword,"[""/usr/bin/ssh"", ""-l"", ""user"", ""10.0.0.16""]"
+process_session_leader_args_count,long,4
+process_session_leader_command_line,wildcard,/usr/bin/ssh -l user 10.0.0.16
+process_session_leader_command_line_text,match_only_text,/usr/bin/ssh -l user 10.0.0.16
+process_session_leader_entity_id,keyword,c2c455d9f99375d
+process_session_leader_executable,keyword,/usr/bin/ssh
+process_session_leader_executable_text,match_only_text,/usr/bin/ssh
+process_session_leader_group_id,keyword,
+process_session_leader_group_name,keyword,
+process_session_leader_interactive,boolean,True
+process_session_leader_name,keyword,ssh
+process_session_leader_name_text,match_only_text,ssh
+process_session_leader_parent_entity_id,keyword,c2c455d9f99375d
+process_session_leader_parent_pid,long,4242
+process_session_leader_parent_session_leader_entity_id,keyword,c2c455d9f99375d
+process_session_leader_parent_session_leader_pid,long,4242
+process_session_leader_parent_session_leader_start,date,2016-05-23T08:05:34.853Z
+process_session_leader_parent_session_leader_vpid,long,4242
+process_session_leader_parent_start,date,2016-05-23T08:05:34.853Z
+process_session_leader_parent_vpid,long,4242
+process_session_leader_pid,long,4242
+process_session_leader_real_group_id,keyword,
+process_session_leader_real_group_name,keyword,
+process_session_leader_real_user_id,keyword,S-1-5-21-202424912787-2692429404-2351956786-1000
+process_session_leader_real_user_name,keyword,a.einstein
+process_session_leader_real_user_name_text,match_only_text,a.einstein
+process_session_leader_same_as_process,boolean,True
+process_session_leader_saved_group_id,keyword,
+process_session_leader_saved_group_name,keyword,
+process_session_leader_saved_user_id,keyword,S-1-5-21-202424912787-2692429404-2351956786-1000
+process_session_leader_saved_user_name,keyword,a.einstein
+process_session_leader_saved_user_name_text,match_only_text,a.einstein
+process_session_leader_start,date,2016-05-23T08:05:34.853Z
+process_session_leader_supplemental_groups_id,keyword,
+process_session_leader_supplemental_groups_name,keyword,
+process_session_leader_tty,object,
+process_session_leader_tty_char_device_major,long,4
+process_session_leader_tty_char_device_minor,long,1
+process_session_leader_user_id,keyword,S-1-5-21-202424912787-2692429404-2351956786-1000
+process_session_leader_user_name,keyword,a.einstein
+process_session_leader_user_name_text,match_only_text,a.einstein
+process_session_leader_vpid,long,4242
+process_session_leader_working_directory,keyword,/home/alice
+process_session_leader_working_directory_text,match_only_text,/home/alice
+process_start,date,2016-05-23T08:05:34.853Z
+process_supplemental_groups_id,keyword,
+process_supplemental_groups_name,keyword,
+process_thread_capabilities_effective,keyword,"[""CAP_BPF"", ""CAP_SYS_ADMIN""]"
+process_thread_capabilities_permitted,keyword,"[""CAP_BPF"", ""CAP_SYS_ADMIN""]"
+process_thread_id,long,4242
+process_thread_name,keyword,thread-0
+process_title,keyword,
+process_title_text,match_only_text,
+process_tty,object,
+process_tty_char_device_major,long,4
+process_tty_char_device_minor,long,1
+process_tty_columns,long,80
+process_tty_rows,long,24
+process_uptime,long,1325
+process_user_id,keyword,S-1-5-21-202424912787-2692429404-2351956786-1000
+process_user_name,keyword,a.einstein
+process_user_name_text,match_only_text,a.einstein
+process_vpid,long,4242
+process_working_directory,keyword,/home/alice
+process_working_directory_text,match_only_text,/home/alice
+registry_data_bytes,keyword,ZQBuAC0AVQBTAAAAZQBuAAAAAAA=
+registry_data_strings,wildcard,"[""C:\rta\red_ttp\bin\myapp.exe""]"
+registry_data_type,keyword,REG_SZ
+registry_hive,keyword,HKLM
+registry_key,keyword,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\winword.exe
+registry_path,keyword,HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\winword.exe\Debugger
+registry_value,keyword,Debugger
+related_hash,keyword,
+related_hosts,keyword,
+related_ip,ip,
+related_user,keyword,
+rule_author,keyword,"[""Star-Lord""]"
+rule_category,keyword,Attempted Information Leak
+rule_description,keyword,Block requests to public DNS over HTTPS / TLS protocols
+rule_id,keyword,101
+rule_license,keyword,Apache 2.0
+rule_name,keyword,BLOCK_DNS_over_TLS
+rule_reference,keyword,https://en.wikipedia.org/wiki/DNS_over_TLS
+rule_ruleset,keyword,Standard_Protocol_Filters
+rule_uuid,keyword,1100110011
+rule_version,keyword,1.1
+server_address,keyword,
+server_as_number,long,15169
+server_as_organization_name,keyword,Google LLC
+server_as_organization_name_text,match_only_text,Google LLC
+server_bytes,long,184
+server_domain,keyword,foo.example.com
+server_geo_city_name,keyword,Montreal
+server_geo_continent_code,keyword,
+server_geo_continent_name,keyword,North America
+server_geo_country_iso_code,keyword,CA
+server_geo_country_name,keyword,Canada
+server_geo_location,geo_point,"{ ""lon"": -73.614830, ""lat"": 45.505918 }"
+server_geo_name,keyword,boston-dc
+server_geo_postal_code,keyword,94040
+server_geo_region_iso_code,keyword,CA-QC
+server_geo_region_name,keyword,Quebec
+server_geo_timezone,keyword,America/Argentina/Buenos_Aires
+server_ip,ip,
+server_mac,keyword,00-00-5E-00-53-23
+server_nat_ip,ip,
+server_nat_port,long,
+server_packets,long,12
+server_port,long,
+server_registered_domain,keyword,example.com
+server_subdomain,keyword,east
+server_top_level_domain,keyword,co.uk
+server_user_domain,keyword,
+server_user_email,keyword,
+server_user_full_name,keyword,Albert Einstein
+server_user_full_name_text,match_only_text,Albert Einstein
+server_user_group_domain,keyword,
+server_user_group_id,keyword,
+server_user_group_name,keyword,
+server_user_hash,keyword,
+server_user_id,keyword,S-1-5-21-202424912787-2692429404-2351956786-1000
+server_user_name,keyword,a.einstein
+server_user_name_text,match_only_text,a.einstein
+server_user_roles,keyword,"[""kibana_admin"", ""reporting_user""]"
+service_address,keyword,172.26.0.2:5432
+service_environment,keyword,production
+service_ephemeral_id,keyword,8a4f500f
+service_id,keyword,d37e5ebfe0ae6c4972dbe9f0174a1637bb8247f6
+service_name,keyword,binaryfluxsearch-metrics
+service_node_name,keyword,instance-0000000016
+service_node_role,keyword,background_tasks
+service_node_roles,keyword,"[""ui"", ""background_tasks""]"
+service_origin_address,keyword,172.26.0.2:5432
+service_origin_environment,keyword,production
+service_origin_ephemeral_id,keyword,8a4f500f
+service_origin_id,keyword,d37e5ebfe0ae6c4972dbe9f0174a1637bb8247f6
+service_origin_name,keyword,binaryfluxsearch-metrics
+service_origin_node_name,keyword,instance-0000000016
+service_origin_node_role,keyword,background_tasks
+service_origin_node_roles,keyword,"[""ui"", ""background_tasks""]"
+service_origin_state,keyword,
+service_origin_type,keyword,binaryfluxsearch
+service_origin_version,keyword,3.2.4
+service_state,keyword,
+service_target_address,keyword,172.26.0.2:5432
+service_target_environment,keyword,production
+service_target_ephemeral_id,keyword,8a4f500f
+service_target_id,keyword,d37e5ebfe0ae6c4972dbe9f0174a1637bb8247f6
+service_target_name,keyword,binaryfluxsearch-metrics
+service_target_node_name,keyword,instance-0000000016
+service_target_node_role,keyword,background_tasks
+service_target_node_roles,keyword,"[""ui"", ""background_tasks""]"
+service_target_state,keyword,
+service_target_type,keyword,binaryfluxsearch
+service_target_version,keyword,3.2.4
+service_type,keyword,binaryfluxsearch
+service_version,keyword,3.2.4
+source_address,keyword,
+source_as_number,long,15169
+source_as_organization_name,keyword,Google LLC
+source_as_organization_name_text,match_only_text,Google LLC
+source_bytes,long,184
+source_domain,keyword,foo.example.com
+source_geo_city_name,keyword,Montreal
+source_geo_continent_code,keyword,
+source_geo_continent_name,keyword,North America
+source_geo_country_iso_code,keyword,CA
+source_geo_country_name,keyword,Canada
+source_geo_location,geo_point,"{ ""lon"": -73.614830, ""lat"": 45.505918 }"
+source_geo_name,keyword,boston-dc
+source_geo_postal_code,keyword,94040
+source_geo_region_iso_code,keyword,CA-QC
+source_geo_region_name,keyword,Quebec
+source_geo_timezone,keyword,America/Argentina/Buenos_Aires
+source_ip,ip,
+source_mac,keyword,00-00-5E-00-53-23
+source_nat_ip,ip,
+source_nat_port,long,
+source_packets,long,12
+source_port,long,
+source_registered_domain,keyword,example.com
+source_subdomain,keyword,east
+source_top_level_domain,keyword,co.uk
+source_user_domain,keyword,
+source_user_email,keyword,
+source_user_full_name,keyword,Albert Einstein
+source_user_full_name_text,match_only_text,Albert Einstein
+source_user_group_domain,keyword,
+source_user_group_id,keyword,
+source_user_group_name,keyword,
+source_user_hash,keyword,
+source_user_id,keyword,S-1-5-21-202424912787-2692429404-2351956786-1000
+source_user_name,keyword,a.einstein
+source_user_name_text,match_only_text,a.einstein
+source_user_roles,keyword,"[""kibana_admin"", ""reporting_user""]"
+span_id,keyword,3ff9a8981b7ccd5a
+threat_enrichments,nested,
+threat_enrichments_indicator,object,
+threat_enrichments_indicator_as_number,long,15169
+threat_enrichments_indicator_as_organization_name,keyword,Google LLC
+threat_enrichments_indicator_as_organization_name_text,match_only_text,Google LLC
+threat_enrichments_indicator_confidence,keyword,Medium
+threat_enrichments_indicator_description,keyword,IP x.x.x.x was observed delivering the Angler EK.
+threat_enrichments_indicator_email_address,keyword,phish@example.com
+threat_enrichments_indicator_file_accessed,date,
+threat_enrichments_indicator_file_attributes,keyword,"[""readonly"", ""system""]"
+threat_enrichments_indicator_file_code_signature_digest_algorithm,keyword,sha256
+threat_enrichments_indicator_file_code_signature_exists,boolean,true
+threat_enrichments_indicator_file_code_signature_flags,keyword,570522385
+threat_enrichments_indicator_file_code_signature_signing_id,keyword,com.apple.xpc.proxy
+threat_enrichments_indicator_file_code_signature_status,keyword,ERROR_UNTRUSTED_ROOT
+threat_enrichments_indicator_file_code_signature_subject_name,keyword,Microsoft Corporation
+threat_enrichments_indicator_file_code_signature_team_id,keyword,EQHXZ8M8AV
+threat_enrichments_indicator_file_code_signature_thumbprint_sha256,keyword,c0f23a8eb1cba0ccaa88483b5a234c96e4bdfec719bf458024e68c2a8183476b
+threat_enrichments_indicator_file_code_signature_timestamp,date,2021-01-01T12:10:30Z
+threat_enrichments_indicator_file_code_signature_trusted,boolean,true
+threat_enrichments_indicator_file_code_signature_valid,boolean,true
+threat_enrichments_indicator_file_created,date,
+threat_enrichments_indicator_file_ctime,date,
+threat_enrichments_indicator_file_device,keyword,sda
+threat_enrichments_indicator_file_directory,keyword,/home/alice
+threat_enrichments_indicator_file_drive_letter,keyword,C
+threat_enrichments_indicator_file_elf_architecture,keyword,x86-64
+threat_enrichments_indicator_file_elf_byte_order,keyword,Little Endian
+threat_enrichments_indicator_file_elf_cpu_type,keyword,Intel
+threat_enrichments_indicator_file_elf_creation_date,date,
+threat_enrichments_indicator_file_elf_exports,flattened,
+threat_enrichments_indicator_file_elf_go_import_hash,keyword,10bddcb4cee42080f76c88d9ff964491
+threat_enrichments_indicator_file_elf_go_imports,flattened,
+threat_enrichments_indicator_file_elf_go_imports_names_entropy,long,
+threat_enrichments_indicator_file_elf_go_imports_names_var_entropy,long,
+threat_enrichments_indicator_file_elf_go_stripped,boolean,
+threat_enrichments_indicator_file_elf_header_abi_version,keyword,
+threat_enrichments_indicator_file_elf_header_class,keyword,
+threat_enrichments_indicator_file_elf_header_data,keyword,
+threat_enrichments_indicator_file_elf_header_entrypoint,long,
+threat_enrichments_indicator_file_elf_header_object_version,keyword,
+threat_enrichments_indicator_file_elf_header_os_abi,keyword,
+threat_enrichments_indicator_file_elf_header_type,keyword,
+threat_enrichments_indicator_file_elf_header_version,keyword,
+threat_enrichments_indicator_file_elf_import_hash,keyword,d41d8cd98f00b204e9800998ecf8427e
+threat_enrichments_indicator_file_elf_imports,flattened,
+threat_enrichments_indicator_file_elf_imports_names_entropy,long,
+threat_enrichments_indicator_file_elf_imports_names_var_entropy,long,
+threat_enrichments_indicator_file_elf_sections,nested,
+threat_enrichments_indicator_file_elf_sections_chi2,long,
+threat_enrichments_indicator_file_elf_sections_entropy,long,
+threat_enrichments_indicator_file_elf_sections_flags,keyword,
+threat_enrichments_indicator_file_elf_sections_name,keyword,
+threat_enrichments_indicator_file_elf_sections_physical_offset,keyword,
+threat_enrichments_indicator_file_elf_sections_physical_size,long,
+threat_enrichments_indicator_file_elf_sections_type,keyword,
+threat_enrichments_indicator_file_elf_sections_var_entropy,long,
+threat_enrichments_indicator_file_elf_sections_virtual_address,long,
+threat_enrichments_indicator_file_elf_sections_virtual_size,long,
+threat_enrichments_indicator_file_elf_segments,nested,
+threat_enrichments_indicator_file_elf_segments_sections,keyword,
+threat_enrichments_indicator_file_elf_segments_type,keyword,
+threat_enrichments_indicator_file_elf_shared_libraries,keyword,
+threat_enrichments_indicator_file_elf_telfhash,keyword,
+threat_enrichments_indicator_file_extension,keyword,png
+threat_enrichments_indicator_file_fork_name,keyword,Zone.Identifer
+threat_enrichments_indicator_file_gid,keyword,1001
+threat_enrichments_indicator_file_group,keyword,alice
+threat_enrichments_indicator_file_hash_cdhash,keyword,3783b4052fd474dbe30676b45c329e7a6d44acd9
+threat_enrichments_indicator_file_hash_md5,keyword,
+threat_enrichments_indicator_file_hash_sha1,keyword,
+threat_enrichments_indicator_file_hash_sha256,keyword,
+threat_enrichments_indicator_file_hash_sha384,keyword,
+threat_enrichments_indicator_file_hash_sha512,keyword,
+threat_enrichments_indicator_file_hash_ssdeep,keyword,
+threat_enrichments_indicator_file_hash_tlsh,keyword,
+threat_enrichments_indicator_file_inode,keyword,256383
+threat_enrichments_indicator_file_mime_type,keyword,
+threat_enrichments_indicator_file_mode,keyword,0640
+threat_enrichments_indicator_file_mtime,date,
+threat_enrichments_indicator_file_name,keyword,example.png
+threat_enrichments_indicator_file_origin_referrer_url,keyword,http://example.com/article1.html
+threat_enrichments_indicator_file_origin_url,keyword,http://example.com/imgs/article1_img1.jpg
+threat_enrichments_indicator_file_owner,keyword,alice
+threat_enrichments_indicator_file_path,keyword,/home/alice/example.png
+threat_enrichments_indicator_file_path_text,match_only_text,/home/alice/example.png
+threat_enrichments_indicator_file_pe_architecture,keyword,x64
+threat_enrichments_indicator_file_pe_company,keyword,Microsoft Corporation
+threat_enrichments_indicator_file_pe_description,keyword,Paint
+threat_enrichments_indicator_file_pe_file_version,keyword,6.3.9600.17415
+threat_enrichments_indicator_file_pe_go_import_hash,keyword,10bddcb4cee42080f76c88d9ff964491
+threat_enrichments_indicator_file_pe_go_imports,flattened,
+threat_enrichments_indicator_file_pe_go_imports_names_entropy,long,
+threat_enrichments_indicator_file_pe_go_imports_names_var_entropy,long,
+threat_enrichments_indicator_file_pe_go_stripped,boolean,
+threat_enrichments_indicator_file_pe_imphash,keyword,0c6803c4e922103c4dca5963aad36ddf
+threat_enrichments_indicator_file_pe_import_hash,keyword,d41d8cd98f00b204e9800998ecf8427e
+threat_enrichments_indicator_file_pe_imports,flattened,
+threat_enrichments_indicator_file_pe_imports_names_entropy,long,
+threat_enrichments_indicator_file_pe_imports_names_var_entropy,long,
+threat_enrichments_indicator_file_pe_original_file_name,keyword,MSPAINT.EXE
+threat_enrichments_indicator_file_pe_pehash,keyword,73ff189b63cd6be375a7ff25179a38d347651975
+threat_enrichments_indicator_file_pe_product,keyword,Microsoft® Windows® Operating System
+threat_enrichments_indicator_file_pe_sections,nested,
+threat_enrichments_indicator_file_pe_sections_entropy,long,
+threat_enrichments_indicator_file_pe_sections_name,keyword,
+threat_enrichments_indicator_file_pe_sections_physical_size,long,
+threat_enrichments_indicator_file_pe_sections_var_entropy,long,
+threat_enrichments_indicator_file_pe_sections_virtual_size,long,
+threat_enrichments_indicator_file_size,long,16384
+threat_enrichments_indicator_file_target_path,keyword,
+threat_enrichments_indicator_file_target_path_text,match_only_text,
+threat_enrichments_indicator_file_type,keyword,file
+threat_enrichments_indicator_file_uid,keyword,1001
+threat_enrichments_indicator_file_x509_alternative_names,keyword,*.binaryflux.ai
+threat_enrichments_indicator_file_x509_issuer_common_name,keyword,Example SHA2 High Assurance Server CA
+threat_enrichments_indicator_file_x509_issuer_country,keyword,US
+threat_enrichments_indicator_file_x509_issuer_distinguished_name,keyword,"C=US, O=Example Inc, OU=www.example.com, CN=Example SHA2 High Assurance Server CA"
+threat_enrichments_indicator_file_x509_issuer_locality,keyword,Mountain View
+threat_enrichments_indicator_file_x509_issuer_organization,keyword,Example Inc
+threat_enrichments_indicator_file_x509_issuer_organizational_unit,keyword,www.example.com
+threat_enrichments_indicator_file_x509_issuer_state_or_province,keyword,California
+threat_enrichments_indicator_file_x509_not_after,date,2020-07-16T03:15:39Z
+threat_enrichments_indicator_file_x509_not_before,date,2019-08-16T01:40:25Z
+threat_enrichments_indicator_file_x509_public_key_algorithm,keyword,RSA
+threat_enrichments_indicator_file_x509_public_key_curve,keyword,nistp521
+threat_enrichments_indicator_file_x509_public_key_exponent,long,65537
+threat_enrichments_indicator_file_x509_public_key_size,long,2048
+threat_enrichments_indicator_file_x509_serial_number,keyword,55FBB9C7DEBF09809D12CCAA
+threat_enrichments_indicator_file_x509_signature_algorithm,keyword,SHA256-RSA
+threat_enrichments_indicator_file_x509_subject_common_name,keyword,shared.global.example.net
+threat_enrichments_indicator_file_x509_subject_country,keyword,US
+threat_enrichments_indicator_file_x509_subject_distinguished_name,keyword,"C=US, ST=California, L=San Francisco, O=Example, Inc., CN=shared.global.example.net"
+threat_enrichments_indicator_file_x509_subject_locality,keyword,San Francisco
+threat_enrichments_indicator_file_x509_subject_organization,keyword,"Example, Inc."
+threat_enrichments_indicator_file_x509_subject_organizational_unit,keyword,
+threat_enrichments_indicator_file_x509_subject_state_or_province,keyword,California
+threat_enrichments_indicator_file_x509_version_number,keyword,3
+threat_enrichments_indicator_first_seen,date,2020-11-05T17:25:47.000Z
+threat_enrichments_indicator_geo_city_name,keyword,Montreal
+threat_enrichments_indicator_geo_continent_code,keyword,
+threat_enrichments_indicator_geo_continent_name,keyword,North America
+threat_enrichments_indicator_geo_country_iso_code,keyword,CA
+threat_enrichments_indicator_geo_country_name,keyword,Canada
+threat_enrichments_indicator_geo_location,geo_point,"{ ""lon"": -73.614830, ""lat"": 45.505918 }"
+threat_enrichments_indicator_geo_name,keyword,boston-dc
+threat_enrichments_indicator_geo_postal_code,keyword,94040
+threat_enrichments_indicator_geo_region_iso_code,keyword,CA-QC
+threat_enrichments_indicator_geo_region_name,keyword,Quebec
+threat_enrichments_indicator_geo_timezone,keyword,America/Argentina/Buenos_Aires
+threat_enrichments_indicator_ip,ip,1.2.3.4
+threat_enrichments_indicator_last_seen,date,2020-11-05T17:25:47.000Z
+threat_enrichments_indicator_marking_tlp,keyword,CLEAR
+threat_enrichments_indicator_marking_tlp_version,keyword,2.0
+threat_enrichments_indicator_modified_at,date,2020-11-05T17:25:47.000Z
+threat_enrichments_indicator_name,keyword,5.2.75.227
+threat_enrichments_indicator_port,long,443
+threat_enrichments_indicator_provider,keyword,lrz_urlhaus
+threat_enrichments_indicator_reference,keyword,https://system.example.com/indicator/0001234
+threat_enrichments_indicator_registry_data_bytes,keyword,ZQBuAC0AVQBTAAAAZQBuAAAAAAA=
+threat_enrichments_indicator_registry_data_strings,wildcard,"[""C:\rta\red_ttp\bin\myapp.exe""]"
+threat_enrichments_indicator_registry_data_type,keyword,REG_SZ
+threat_enrichments_indicator_registry_hive,keyword,HKLM
+threat_enrichments_indicator_registry_key,keyword,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\winword.exe
+threat_enrichments_indicator_registry_path,keyword,HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\winword.exe\Debugger
+threat_enrichments_indicator_registry_value,keyword,Debugger
+threat_enrichments_indicator_scanner_stats,long,4
+threat_enrichments_indicator_sightings,long,20
+threat_enrichments_indicator_type,keyword,ipv4-addr
+threat_enrichments_indicator_url_domain,keyword,www.binaryflux.ai
+threat_enrichments_indicator_url_extension,keyword,png
+threat_enrichments_indicator_url_fragment,keyword,
+threat_enrichments_indicator_url_full,wildcard,https://www.binaryflux.ai:443/search?q=binaryfluxsearch#top
+threat_enrichments_indicator_url_full_text,match_only_text,https://www.binaryflux.ai:443/search?q=binaryfluxsearch#top
+threat_enrichments_indicator_url_original,wildcard,https://www.binaryflux.ai:443/search?q=binaryfluxsearch#top or /search?q=binaryfluxsearch
+threat_enrichments_indicator_url_original_text,match_only_text,https://www.binaryflux.ai:443/search?q=binaryfluxsearch#top or /search?q=binaryfluxsearch
+threat_enrichments_indicator_url_password,keyword,
+threat_enrichments_indicator_url_path,wildcard,
+threat_enrichments_indicator_url_port,long,443
+threat_enrichments_indicator_url_query,keyword,
+threat_enrichments_indicator_url_registered_domain,keyword,example.com
+threat_enrichments_indicator_url_scheme,keyword,https
+threat_enrichments_indicator_url_subdomain,keyword,east
+threat_enrichments_indicator_url_top_level_domain,keyword,co.uk
+threat_enrichments_indicator_url_username,keyword,
+threat_enrichments_indicator_x509_alternative_names,keyword,*.binaryflux.ai
+threat_enrichments_indicator_x509_issuer_common_name,keyword,Example SHA2 High Assurance Server CA
+threat_enrichments_indicator_x509_issuer_country,keyword,US
+threat_enrichments_indicator_x509_issuer_distinguished_name,keyword,"C=US, O=Example Inc, OU=www.example.com, CN=Example SHA2 High Assurance Server CA"
+threat_enrichments_indicator_x509_issuer_locality,keyword,Mountain View
+threat_enrichments_indicator_x509_issuer_organization,keyword,Example Inc
+threat_enrichments_indicator_x509_issuer_organizational_unit,keyword,www.example.com
+threat_enrichments_indicator_x509_issuer_state_or_province,keyword,California
+threat_enrichments_indicator_x509_not_after,date,2020-07-16T03:15:39Z
+threat_enrichments_indicator_x509_not_before,date,2019-08-16T01:40:25Z
+threat_enrichments_indicator_x509_public_key_algorithm,keyword,RSA
+threat_enrichments_indicator_x509_public_key_curve,keyword,nistp521
+threat_enrichments_indicator_x509_public_key_exponent,long,65537
+threat_enrichments_indicator_x509_public_key_size,long,2048
+threat_enrichments_indicator_x509_serial_number,keyword,55FBB9C7DEBF09809D12CCAA
+threat_enrichments_indicator_x509_signature_algorithm,keyword,SHA256-RSA
+threat_enrichments_indicator_x509_subject_common_name,keyword,shared.global.example.net
+threat_enrichments_indicator_x509_subject_country,keyword,US
+threat_enrichments_indicator_x509_subject_distinguished_name,keyword,"C=US, ST=California, L=San Francisco, O=Example, Inc., CN=shared.global.example.net"
+threat_enrichments_indicator_x509_subject_locality,keyword,San Francisco
+threat_enrichments_indicator_x509_subject_organization,keyword,"Example, Inc."
+threat_enrichments_indicator_x509_subject_organizational_unit,keyword,
+threat_enrichments_indicator_x509_subject_state_or_province,keyword,California
+threat_enrichments_indicator_x509_version_number,keyword,3
+threat_enrichments_matched_atomic,keyword,bad-domain.com
+threat_enrichments_matched_field,keyword,file.hash.sha256
+threat_enrichments_matched_id,keyword,ff93aee5-86a1-4a61-b0e6-0cdc313d01b5
+threat_enrichments_matched_index,keyword,filebeat-8.0.0-2021.05.23-000011
+threat_enrichments_matched_occurred,date,2021-10-05T17:00:58.326Z
+threat_enrichments_matched_type,keyword,indicator_match_rule
+threat_feed_dashboard_id,keyword,5ba16340-72e6-11eb-a3e3-b3cc7c78a70f
+threat_feed_description,keyword,Threat feed from the AlienVault Open Threat eXchange network.
+threat_feed_name,keyword,AlienVault OTX
+threat_feed_reference,keyword,https://otx.alienvault.com
+threat_framework,keyword,MITRE ATT&CK
+threat_group_alias,keyword,"[ ""Magecart Group 6"" ]"
+threat_group_id,keyword,G0037
+threat_group_name,keyword,FIN6
+threat_group_reference,keyword,https://attack.mitre.org/groups/G0037/
+threat_indicator_as_number,long,15169
+threat_indicator_as_organization_name,keyword,Google LLC
+threat_indicator_as_organization_name_text,match_only_text,Google LLC
+threat_indicator_confidence,keyword,Medium
+threat_indicator_description,keyword,IP x.x.x.x was observed delivering the Angler EK.
+threat_indicator_email_address,keyword,phish@example.com
+threat_indicator_file_accessed,date,
+threat_indicator_file_attributes,keyword,"[""readonly"", ""system""]"
+threat_indicator_file_code_signature_digest_algorithm,keyword,sha256
+threat_indicator_file_code_signature_exists,boolean,true
+threat_indicator_file_code_signature_flags,keyword,570522385
+threat_indicator_file_code_signature_signing_id,keyword,com.apple.xpc.proxy
+threat_indicator_file_code_signature_status,keyword,ERROR_UNTRUSTED_ROOT
+threat_indicator_file_code_signature_subject_name,keyword,Microsoft Corporation
+threat_indicator_file_code_signature_team_id,keyword,EQHXZ8M8AV
+threat_indicator_file_code_signature_thumbprint_sha256,keyword,c0f23a8eb1cba0ccaa88483b5a234c96e4bdfec719bf458024e68c2a8183476b
+threat_indicator_file_code_signature_timestamp,date,2021-01-01T12:10:30Z
+threat_indicator_file_code_signature_trusted,boolean,true
+threat_indicator_file_code_signature_valid,boolean,true
+threat_indicator_file_created,date,
+threat_indicator_file_ctime,date,
+threat_indicator_file_device,keyword,sda
+threat_indicator_file_directory,keyword,/home/alice
+threat_indicator_file_drive_letter,keyword,C
+threat_indicator_file_elf_architecture,keyword,x86-64
+threat_indicator_file_elf_byte_order,keyword,Little Endian
+threat_indicator_file_elf_cpu_type,keyword,Intel
+threat_indicator_file_elf_creation_date,date,
+threat_indicator_file_elf_exports,flattened,
+threat_indicator_file_elf_go_import_hash,keyword,10bddcb4cee42080f76c88d9ff964491
+threat_indicator_file_elf_go_imports,flattened,
+threat_indicator_file_elf_go_imports_names_entropy,long,
+threat_indicator_file_elf_go_imports_names_var_entropy,long,
+threat_indicator_file_elf_go_stripped,boolean,
+threat_indicator_file_elf_header_abi_version,keyword,
+threat_indicator_file_elf_header_class,keyword,
+threat_indicator_file_elf_header_data,keyword,
+threat_indicator_file_elf_header_entrypoint,long,
+threat_indicator_file_elf_header_object_version,keyword,
+threat_indicator_file_elf_header_os_abi,keyword,
+threat_indicator_file_elf_header_type,keyword,
+threat_indicator_file_elf_header_version,keyword,
+threat_indicator_file_elf_import_hash,keyword,d41d8cd98f00b204e9800998ecf8427e
+threat_indicator_file_elf_imports,flattened,
+threat_indicator_file_elf_imports_names_entropy,long,
+threat_indicator_file_elf_imports_names_var_entropy,long,
+threat_indicator_file_elf_sections,nested,
+threat_indicator_file_elf_sections_chi2,long,
+threat_indicator_file_elf_sections_entropy,long,
+threat_indicator_file_elf_sections_flags,keyword,
+threat_indicator_file_elf_sections_name,keyword,
+threat_indicator_file_elf_sections_physical_offset,keyword,
+threat_indicator_file_elf_sections_physical_size,long,
+threat_indicator_file_elf_sections_type,keyword,
+threat_indicator_file_elf_sections_var_entropy,long,
+threat_indicator_file_elf_sections_virtual_address,long,
+threat_indicator_file_elf_sections_virtual_size,long,
+threat_indicator_file_elf_segments,nested,
+threat_indicator_file_elf_segments_sections,keyword,
+threat_indicator_file_elf_segments_type,keyword,
+threat_indicator_file_elf_shared_libraries,keyword,
+threat_indicator_file_elf_telfhash,keyword,
+threat_indicator_file_extension,keyword,png
+threat_indicator_file_fork_name,keyword,Zone.Identifer
+threat_indicator_file_gid,keyword,1001
+threat_indicator_file_group,keyword,alice
+threat_indicator_file_hash_cdhash,keyword,3783b4052fd474dbe30676b45c329e7a6d44acd9
+threat_indicator_file_hash_md5,keyword,
+threat_indicator_file_hash_sha1,keyword,
+threat_indicator_file_hash_sha256,keyword,
+threat_indicator_file_hash_sha384,keyword,
+threat_indicator_file_hash_sha512,keyword,
+threat_indicator_file_hash_ssdeep,keyword,
+threat_indicator_file_hash_tlsh,keyword,
+threat_indicator_file_inode,keyword,256383
+threat_indicator_file_mime_type,keyword,
+threat_indicator_file_mode,keyword,0640
+threat_indicator_file_mtime,date,
+threat_indicator_file_name,keyword,example.png
+threat_indicator_file_origin_referrer_url,keyword,http://example.com/article1.html
+threat_indicator_file_origin_url,keyword,http://example.com/imgs/article1_img1.jpg
+threat_indicator_file_owner,keyword,alice
+threat_indicator_file_path,keyword,/home/alice/example.png
+threat_indicator_file_path_text,match_only_text,/home/alice/example.png
+threat_indicator_file_pe_architecture,keyword,x64
+threat_indicator_file_pe_company,keyword,Microsoft Corporation
+threat_indicator_file_pe_description,keyword,Paint
+threat_indicator_file_pe_file_version,keyword,6.3.9600.17415
+threat_indicator_file_pe_go_import_hash,keyword,10bddcb4cee42080f76c88d9ff964491
+threat_indicator_file_pe_go_imports,flattened,
+threat_indicator_file_pe_go_imports_names_entropy,long,
+threat_indicator_file_pe_go_imports_names_var_entropy,long,
+threat_indicator_file_pe_go_stripped,boolean,
+threat_indicator_file_pe_imphash,keyword,0c6803c4e922103c4dca5963aad36ddf
+threat_indicator_file_pe_import_hash,keyword,d41d8cd98f00b204e9800998ecf8427e
+threat_indicator_file_pe_imports,flattened,
+threat_indicator_file_pe_imports_names_entropy,long,
+threat_indicator_file_pe_imports_names_var_entropy,long,
+threat_indicator_file_pe_original_file_name,keyword,MSPAINT.EXE
+threat_indicator_file_pe_pehash,keyword,73ff189b63cd6be375a7ff25179a38d347651975
+threat_indicator_file_pe_product,keyword,Microsoft® Windows® Operating System
+threat_indicator_file_pe_sections,nested,
+threat_indicator_file_pe_sections_entropy,long,
+threat_indicator_file_pe_sections_name,keyword,
+threat_indicator_file_pe_sections_physical_size,long,
+threat_indicator_file_pe_sections_var_entropy,long,
+threat_indicator_file_pe_sections_virtual_size,long,
+threat_indicator_file_size,long,16384
+threat_indicator_file_target_path,keyword,
+threat_indicator_file_target_path_text,match_only_text,
+threat_indicator_file_type,keyword,file
+threat_indicator_file_uid,keyword,1001
+threat_indicator_file_x509_alternative_names,keyword,*.binaryflux.ai
+threat_indicator_file_x509_issuer_common_name,keyword,Example SHA2 High Assurance Server CA
+threat_indicator_file_x509_issuer_country,keyword,US
+threat_indicator_file_x509_issuer_distinguished_name,keyword,"C=US, O=Example Inc, OU=www.example.com, CN=Example SHA2 High Assurance Server CA"
+threat_indicator_file_x509_issuer_locality,keyword,Mountain View
+threat_indicator_file_x509_issuer_organization,keyword,Example Inc
+threat_indicator_file_x509_issuer_organizational_unit,keyword,www.example.com
+threat_indicator_file_x509_issuer_state_or_province,keyword,California
+threat_indicator_file_x509_not_after,date,2020-07-16T03:15:39Z
+threat_indicator_file_x509_not_before,date,2019-08-16T01:40:25Z
+threat_indicator_file_x509_public_key_algorithm,keyword,RSA
+threat_indicator_file_x509_public_key_curve,keyword,nistp521
+threat_indicator_file_x509_public_key_exponent,long,65537
+threat_indicator_file_x509_public_key_size,long,2048
+threat_indicator_file_x509_serial_number,keyword,55FBB9C7DEBF09809D12CCAA
+threat_indicator_file_x509_signature_algorithm,keyword,SHA256-RSA
+threat_indicator_file_x509_subject_common_name,keyword,shared.global.example.net
+threat_indicator_file_x509_subject_country,keyword,US
+threat_indicator_file_x509_subject_distinguished_name,keyword,"C=US, ST=California, L=San Francisco, O=Example, Inc., CN=shared.global.example.net"
+threat_indicator_file_x509_subject_locality,keyword,San Francisco
+threat_indicator_file_x509_subject_organization,keyword,"Example, Inc."
+threat_indicator_file_x509_subject_organizational_unit,keyword,
+threat_indicator_file_x509_subject_state_or_province,keyword,California
+threat_indicator_file_x509_version_number,keyword,3
+threat_indicator_first_seen,date,2020-11-05T17:25:47.000Z
+threat_indicator_geo_city_name,keyword,Montreal
+threat_indicator_geo_continent_code,keyword,
+threat_indicator_geo_continent_name,keyword,North America
+threat_indicator_geo_country_iso_code,keyword,CA
+threat_indicator_geo_country_name,keyword,Canada
+threat_indicator_geo_location,geo_point,"{ ""lon"": -73.614830, ""lat"": 45.505918 }"
+threat_indicator_geo_name,keyword,boston-dc
+threat_indicator_geo_postal_code,keyword,94040
+threat_indicator_geo_region_iso_code,keyword,CA-QC
+threat_indicator_geo_region_name,keyword,Quebec
+threat_indicator_geo_timezone,keyword,America/Argentina/Buenos_Aires
+threat_indicator_id,keyword,[indicator--d7008e06-ab86-415a-9803-3c81ce2d3c37]
+threat_indicator_ip,ip,1.2.3.4
+threat_indicator_last_seen,date,2020-11-05T17:25:47.000Z
+threat_indicator_marking_tlp,keyword,CLEAR
+threat_indicator_marking_tlp_version,keyword,2.0
+threat_indicator_modified_at,date,2020-11-05T17:25:47.000Z
+threat_indicator_name,keyword,5.2.75.227
+threat_indicator_port,long,443
+threat_indicator_provider,keyword,lrz_urlhaus
+threat_indicator_reference,keyword,https://system.example.com/indicator/0001234
+threat_indicator_registry_data_bytes,keyword,ZQBuAC0AVQBTAAAAZQBuAAAAAAA=
+threat_indicator_registry_data_strings,wildcard,"[""C:\rta\red_ttp\bin\myapp.exe""]"
+threat_indicator_registry_data_type,keyword,REG_SZ
+threat_indicator_registry_hive,keyword,HKLM
+threat_indicator_registry_key,keyword,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\winword.exe
+threat_indicator_registry_path,keyword,HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\winword.exe\Debugger
+threat_indicator_registry_value,keyword,Debugger
+threat_indicator_scanner_stats,long,4
+threat_indicator_sightings,long,20
+threat_indicator_type,keyword,ipv4-addr
+threat_indicator_url_domain,keyword,www.binaryflux.ai
+threat_indicator_url_extension,keyword,png
+threat_indicator_url_fragment,keyword,
+threat_indicator_url_full,wildcard,https://www.binaryflux.ai:443/search?q=binaryfluxsearch#top
+threat_indicator_url_full_text,match_only_text,https://www.binaryflux.ai:443/search?q=binaryfluxsearch#top
+threat_indicator_url_original,wildcard,https://www.binaryflux.ai:443/search?q=binaryfluxsearch#top or /search?q=binaryfluxsearch
+threat_indicator_url_original_text,match_only_text,https://www.binaryflux.ai:443/search?q=binaryfluxsearch#top or /search?q=binaryfluxsearch
+threat_indicator_url_password,keyword,
+threat_indicator_url_path,wildcard,
+threat_indicator_url_port,long,443
+threat_indicator_url_query,keyword,
+threat_indicator_url_registered_domain,keyword,example.com
+threat_indicator_url_scheme,keyword,https
+threat_indicator_url_subdomain,keyword,east
+threat_indicator_url_top_level_domain,keyword,co.uk
+threat_indicator_url_username,keyword,
+threat_indicator_x509_alternative_names,keyword,*.binaryflux.ai
+threat_indicator_x509_issuer_common_name,keyword,Example SHA2 High Assurance Server CA
+threat_indicator_x509_issuer_country,keyword,US
+threat_indicator_x509_issuer_distinguished_name,keyword,"C=US, O=Example Inc, OU=www.example.com, CN=Example SHA2 High Assurance Server CA"
+threat_indicator_x509_issuer_locality,keyword,Mountain View
+threat_indicator_x509_issuer_organization,keyword,Example Inc
+threat_indicator_x509_issuer_organizational_unit,keyword,www.example.com
+threat_indicator_x509_issuer_state_or_province,keyword,California
+threat_indicator_x509_not_after,date,2020-07-16T03:15:39Z
+threat_indicator_x509_not_before,date,2019-08-16T01:40:25Z
+threat_indicator_x509_public_key_algorithm,keyword,RSA
+threat_indicator_x509_public_key_curve,keyword,nistp521
+threat_indicator_x509_public_key_exponent,long,65537
+threat_indicator_x509_public_key_size,long,2048
+threat_indicator_x509_serial_number,keyword,55FBB9C7DEBF09809D12CCAA
+threat_indicator_x509_signature_algorithm,keyword,SHA256-RSA
+threat_indicator_x509_subject_common_name,keyword,shared.global.example.net
+threat_indicator_x509_subject_country,keyword,US
+threat_indicator_x509_subject_distinguished_name,keyword,"C=US, ST=California, L=San Francisco, O=Example, Inc., CN=shared.global.example.net"
+threat_indicator_x509_subject_locality,keyword,San Francisco
+threat_indicator_x509_subject_organization,keyword,"Example, Inc."
+threat_indicator_x509_subject_organizational_unit,keyword,
+threat_indicator_x509_subject_state_or_province,keyword,California
+threat_indicator_x509_version_number,keyword,3
+threat_software_alias,keyword,"[ ""X-Agent"" ]"
+threat_software_id,keyword,S0552
+threat_software_name,keyword,AdFind
+threat_software_platforms,keyword,"[ ""Windows"" ]"
+threat_software_reference,keyword,https://attack.mitre.org/software/S0552/
+threat_software_type,keyword,Tool
+threat_tactic_id,keyword,TA0002
+threat_tactic_name,keyword,Execution
+threat_tactic_reference,keyword,https://attack.mitre.org/tactics/TA0002/
+threat_technique_id,keyword,T1059
+threat_technique_name,keyword,Command and Scripting Interpreter
+threat_technique_name_text,match_only_text,Command and Scripting Interpreter
+threat_technique_reference,keyword,https://attack.mitre.org/techniques/T1059/
+threat_technique_subtechnique_id,keyword,T1059.001
+threat_technique_subtechnique_name,keyword,PowerShell
+threat_technique_subtechnique_name_text,match_only_text,PowerShell
+threat_technique_subtechnique_reference,keyword,https://attack.mitre.org/techniques/T1059/001/
+tls_cipher,keyword,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
+tls_client_certificate,keyword,MII...
+tls_client_certificate_chain,keyword,"[""MII..."", ""MII...""]"
+tls_client_hash_md5,keyword,0F76C7F2C55BFD7D8E8B8F4BFBF0C9EC
+tls_client_hash_sha1,keyword,9E393D93138888D288266C2D915214D1D1CCEB2A
+tls_client_hash_sha256,keyword,0687F666A054EF17A08E2F2162EAB4CBC0D265E1D7875BE74BF3C712CA92DAF0
+tls_client_issuer,keyword,"CN=Example Root CA, OU=Infrastructure Team, DC=example, DC=com"
+tls_client_ja3,keyword,d4e5b18d6b55c71272893221c96ba240
+tls_client_not_after,date,2021-01-01T00:00:00.000Z
+tls_client_not_before,date,1970-01-01T00:00:00.000Z
+tls_client_server_name,keyword,www.binaryflux.ai
+tls_client_subject,keyword,"CN=myclient, OU=Documentation Team, DC=example, DC=com"
+tls_client_supported_ciphers,keyword,"[""TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384"", ""TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384"", ""...""]"
+tls_client_x509_alternative_names,keyword,*.binaryflux.ai
+tls_client_x509_issuer_common_name,keyword,Example SHA2 High Assurance Server CA
+tls_client_x509_issuer_country,keyword,US
+tls_client_x509_issuer_distinguished_name,keyword,"C=US, O=Example Inc, OU=www.example.com, CN=Example SHA2 High Assurance Server CA"
+tls_client_x509_issuer_locality,keyword,Mountain View
+tls_client_x509_issuer_organization,keyword,Example Inc
+tls_client_x509_issuer_organizational_unit,keyword,www.example.com
+tls_client_x509_issuer_state_or_province,keyword,California
+tls_client_x509_not_after,date,2020-07-16T03:15:39Z
+tls_client_x509_not_before,date,2019-08-16T01:40:25Z
+tls_client_x509_public_key_algorithm,keyword,RSA
+tls_client_x509_public_key_curve,keyword,nistp521
+tls_client_x509_public_key_exponent,long,65537
+tls_client_x509_public_key_size,long,2048
+tls_client_x509_serial_number,keyword,55FBB9C7DEBF09809D12CCAA
+tls_client_x509_signature_algorithm,keyword,SHA256-RSA
+tls_client_x509_subject_common_name,keyword,shared.global.example.net
+tls_client_x509_subject_country,keyword,US
+tls_client_x509_subject_distinguished_name,keyword,"C=US, ST=California, L=San Francisco, O=Example, Inc., CN=shared.global.example.net"
+tls_client_x509_subject_locality,keyword,San Francisco
+tls_client_x509_subject_organization,keyword,"Example, Inc."
+tls_client_x509_subject_organizational_unit,keyword,
+tls_client_x509_subject_state_or_province,keyword,California
+tls_client_x509_version_number,keyword,3
+tls_curve,keyword,secp256r1
+tls_established,boolean,
+tls_next_protocol,keyword,http/1.1
+tls_resumed,boolean,
+tls_server_certificate,keyword,MII...
+tls_server_certificate_chain,keyword,"[""MII..."", ""MII...""]"
+tls_server_hash_md5,keyword,0F76C7F2C55BFD7D8E8B8F4BFBF0C9EC
+tls_server_hash_sha1,keyword,9E393D93138888D288266C2D915214D1D1CCEB2A
+tls_server_hash_sha256,keyword,0687F666A054EF17A08E2F2162EAB4CBC0D265E1D7875BE74BF3C712CA92DAF0
+tls_server_issuer,keyword,"CN=Example Root CA, OU=Infrastructure Team, DC=example, DC=com"
+tls_server_ja3s,keyword,394441ab65754e2207b1e1b457b3641d
+tls_server_not_after,date,2021-01-01T00:00:00.000Z
+tls_server_not_before,date,1970-01-01T00:00:00.000Z
+tls_server_subject,keyword,"CN=www.example.com, OU=Infrastructure Team, DC=example, DC=com"
+tls_server_x509_alternative_names,keyword,*.binaryflux.ai
+tls_server_x509_issuer_common_name,keyword,Example SHA2 High Assurance Server CA
+tls_server_x509_issuer_country,keyword,US
+tls_server_x509_issuer_distinguished_name,keyword,"C=US, O=Example Inc, OU=www.example.com, CN=Example SHA2 High Assurance Server CA"
+tls_server_x509_issuer_locality,keyword,Mountain View
+tls_server_x509_issuer_organization,keyword,Example Inc
+tls_server_x509_issuer_organizational_unit,keyword,www.example.com
+tls_server_x509_issuer_state_or_province,keyword,California
+tls_server_x509_not_after,date,2020-07-16T03:15:39Z
+tls_server_x509_not_before,date,2019-08-16T01:40:25Z
+tls_server_x509_public_key_algorithm,keyword,RSA
+tls_server_x509_public_key_curve,keyword,nistp521
+tls_server_x509_public_key_exponent,long,65537
+tls_server_x509_public_key_size,long,2048
+tls_server_x509_serial_number,keyword,55FBB9C7DEBF09809D12CCAA
+tls_server_x509_signature_algorithm,keyword,SHA256-RSA
+tls_server_x509_subject_common_name,keyword,shared.global.example.net
+tls_server_x509_subject_country,keyword,US
+tls_server_x509_subject_distinguished_name,keyword,"C=US, ST=California, L=San Francisco, O=Example, Inc., CN=shared.global.example.net"
+tls_server_x509_subject_locality,keyword,San Francisco
+tls_server_x509_subject_organization,keyword,"Example, Inc."
+tls_server_x509_subject_organizational_unit,keyword,
+tls_server_x509_subject_state_or_province,keyword,California
+tls_server_x509_version_number,keyword,3
+tls_version,keyword,1.2
+tls_version_protocol,keyword,tls
+trace_id,keyword,4bf92f3577b34da6a3ce929d0e0e4736
+transaction_id,keyword,00f067aa0ba902b7
+url_domain,keyword,www.binaryflux.ai
+url_extension,keyword,png
+url_fragment,keyword,
+url_full,wildcard,https://www.binaryflux.ai:443/search?q=binaryfluxsearch#top
+url_full_text,match_only_text,https://www.binaryflux.ai:443/search?q=binaryfluxsearch#top
+url_original,wildcard,https://www.binaryflux.ai:443/search?q=binaryfluxsearch#top or /search?q=binaryfluxsearch
+url_original_text,match_only_text,https://www.binaryflux.ai:443/search?q=binaryfluxsearch#top or /search?q=binaryfluxsearch
+url_password,keyword,
+url_path,wildcard,
+url_port,long,443
+url_query,keyword,
+url_registered_domain,keyword,example.com
+url_scheme,keyword,https
+url_subdomain,keyword,east
+url_top_level_domain,keyword,co.uk
+url_username,keyword,
+user_changes_domain,keyword,
+user_changes_email,keyword,
+user_changes_full_name,keyword,Albert Einstein
+user_changes_full_name_text,match_only_text,Albert Einstein
+user_changes_group_domain,keyword,
+user_changes_group_id,keyword,
+user_changes_group_name,keyword,
+user_changes_hash,keyword,
+user_changes_id,keyword,S-1-5-21-202424912787-2692429404-2351956786-1000
+user_changes_name,keyword,a.einstein
+user_changes_name_text,match_only_text,a.einstein
+user_changes_roles,keyword,"[""kibana_admin"", ""reporting_user""]"
+user_domain,keyword,
+user_effective_domain,keyword,
+user_effective_email,keyword,
+user_effective_full_name,keyword,Albert Einstein
+user_effective_full_name_text,match_only_text,Albert Einstein
+user_effective_group_domain,keyword,
+user_effective_group_id,keyword,
+user_effective_group_name,keyword,
+user_effective_hash,keyword,
+user_effective_id,keyword,S-1-5-21-202424912787-2692429404-2351956786-1000
+user_effective_name,keyword,a.einstein
+user_effective_name_text,match_only_text,a.einstein
+user_effective_roles,keyword,"[""kibana_admin"", ""reporting_user""]"
+user_email,keyword,
+user_full_name,keyword,Albert Einstein
+user_full_name_text,match_only_text,Albert Einstein
+user_group_domain,keyword,
+user_group_id,keyword,
+user_group_name,keyword,
+user_hash,keyword,
+user_id,keyword,S-1-5-21-202424912787-2692429404-2351956786-1000
+user_name,keyword,a.einstein
+user_name_text,match_only_text,a.einstein
+user_risk_calculated_level,keyword,High
+user_risk_calculated_score,float,880.73
+user_risk_calculated_score_norm,float,88.73
+user_risk_static_level,keyword,High
+user_risk_static_score,float,830.0
+user_risk_static_score_norm,float,83.0
+user_roles,keyword,"[""kibana_admin"", ""reporting_user""]"
+user_target_domain,keyword,
+user_target_email,keyword,
+user_target_full_name,keyword,Albert Einstein
+user_target_full_name_text,match_only_text,Albert Einstein
+user_target_group_domain,keyword,
+user_target_group_id,keyword,
+user_target_group_name,keyword,
+user_target_hash,keyword,
+user_target_id,keyword,S-1-5-21-202424912787-2692429404-2351956786-1000
+user_target_name,keyword,a.einstein
+user_target_name_text,match_only_text,a.einstein
+user_target_roles,keyword,"[""kibana_admin"", ""reporting_user""]"
+user_agent_device_name,keyword,iPhone
+user_agent_name,keyword,Safari
+user_agent_original,keyword,"Mozilla/5.0 (iPhone; CPU iPhone OS 12_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Mobile/15E148 Safari/604.1"
+user_agent_original_text,match_only_text,"Mozilla/5.0 (iPhone; CPU iPhone OS 12_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Mobile/15E148 Safari/604.1"
+user_agent_os_family,keyword,debian
+user_agent_os_full,keyword,Mac OS Mojave
+user_agent_os_full_text,match_only_text,Mac OS Mojave
+user_agent_os_kernel,keyword,4.4.0-112-generic
+user_agent_os_name,keyword,Mac OS X
+user_agent_os_name_text,match_only_text,Mac OS X
+user_agent_os_platform,keyword,darwin
+user_agent_os_type,keyword,macos
+user_agent_os_version,keyword,10.14.1
+user_agent_version,keyword,12.0
+volume_bus_type,keyword,FileBackedVirtual
+volume_default_access,keyword,
+volume_device_name,keyword,
+volume_device_type,keyword,CD-ROM File System
+volume_dos_name,keyword,E:
+volume_file_system_type,keyword,
+volume_mount_name,keyword,
+volume_nt_name,keyword,\Device\Cdrom1
+volume_product_id,keyword,
+volume_product_name,keyword,Virtual DVD-ROM
+volume_removable,boolean,
+volume_serial_number,keyword,
+volume_size,long,
+volume_vendor_id,keyword,
+volume_vendor_name,keyword,Msft
+volume_writable,boolean,
+vulnerability_category,keyword,"[""Firewall""]"
+vulnerability_classification,keyword,CVSS
+vulnerability_description,keyword,"In macOS before 2.12.6, there is a vulnerability in the RPC..."
+vulnerability_description_text,match_only_text,"In macOS before 2.12.6, there is a vulnerability in the RPC..."
+vulnerability_enumeration,keyword,CVE
+vulnerability_id,keyword,CVE-2019-00001
+vulnerability_reference,keyword,https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-6111
+vulnerability_report_id,keyword,20191018.0001
+vulnerability_scanner_vendor,keyword,Tenable
+vulnerability_score_base,float,5.5
+vulnerability_score_environmental,float,5.5
+vulnerability_score_temporal,float,
+vulnerability_score_version,keyword,2.0
+vulnerability_severity,keyword,Critical

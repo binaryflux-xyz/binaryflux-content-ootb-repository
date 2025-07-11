@@ -20,6 +20,9 @@ Use these lookup data to enrich events. Import it into minio or s3 by create a b
 ## MitreTechniques
     Description: Provides detailed information on MITRE techniques along with their descriptions, facilitating advanced threat intelligence analysis
     Path: s3://lookups/mitre/mitre_tactics_and_techniques.csv
+## BinaryfluxFields
+    Description: Reserved binaryflux data fields
+    Path: s3://lookups/binaryflux/binaryflux_fields_minimal.csv
 
 Usage:
   > Use the ipaddress to get its quivalent int value\
