@@ -13,3 +13,4 @@ def uniquekey(message):
 def columnproperties():
     return {"email_to_address":"list"}
     
+    

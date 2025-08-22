@@ -16,3 +16,5 @@ def columns() : #column names to be aggregated
 
 def archive() :
     return 'monthly'
+
+    
