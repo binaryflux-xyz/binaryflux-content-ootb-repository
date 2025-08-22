@@ -3,10 +3,13 @@ def type() :
 
 
 def columns() : #column names to be aggregated
-    return ['tenant','provider','host']
+    return ['provider','host']
 
 def archive() :
     return 'weekly'
+  
 
 def uniquekey(message):
   return message.get('tenant')
+
+  

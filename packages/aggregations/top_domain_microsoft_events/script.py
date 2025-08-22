@@ -8,8 +8,11 @@ def archive() :
     return 'monthly'
 
 def uniquekey(message):
-    return "top_domain_microsoft_events"
+    return message.get("email_from_domain","")
 
         
 def columnproperties():
     return {"email_to_address":"list"}
+
+
+  

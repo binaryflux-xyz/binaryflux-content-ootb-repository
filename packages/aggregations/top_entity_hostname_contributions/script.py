@@ -8,7 +8,4 @@ def archive() :
     return 'monthly'
 
 def uniquekey(message):
-    try:
-        return message.get('source_ip')+'_'+message.get('source_hostname')
-    except:
-        return None
+  return message.get('source_ip')+'_'+message.get('source_hostname')

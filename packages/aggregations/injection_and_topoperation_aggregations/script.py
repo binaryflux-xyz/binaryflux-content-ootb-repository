@@ -1,11 +1,12 @@
 def type() :
-    return 'account_detection_map'
+    return 'injection_topoperation_data'
 
 def columns() : #column names to be aggregated
-    return ['source_account_name']
+    return ['table_name','operation']
 
 def archive() :
     return 'monthly'
 
+
 def uniquekey(message):
-  return message.get('source_account_name')
+    return None

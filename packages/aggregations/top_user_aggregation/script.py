@@ -1,11 +1,11 @@
 def type() :
-    return 'account_detection_map'
+    return 'database_top_user'
 
 def columns() : #column names to be aggregated
-    return ['source_account_name']
+    return ['user_name']
 
 def archive() :
     return 'monthly'
 
 def uniquekey(message):
-  return message.get('source_account_name')
+  return None
