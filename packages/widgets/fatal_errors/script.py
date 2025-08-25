@@ -47,4 +47,4 @@ def render(results):
             # Convert timestamp from milliseconds to seconds and format
             result['Datetime'] = datetime.utcfromtimestamp(timestamp / 1000).strftime('%Y-%m-%d %H:%M:%S')
 
-    return {"result": results, "columns": columnList}
+    return {"result": results, "columns": columnList, "type":"event_severity_message"}

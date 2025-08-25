@@ -43,4 +43,4 @@ def render(result):
             data.append(item)
             counter=counter+1
         
-    return {"result":data}
+    return {"result":data,"type":"injection_topoperation_data"}

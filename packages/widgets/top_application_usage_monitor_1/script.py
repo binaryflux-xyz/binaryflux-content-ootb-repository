@@ -50,4 +50,4 @@ def render(result):
             data.append(item["count"])
             counter=counter+1
         
-    return {"series":[{'data':data}], 'categories': categories,"column":"applicationname","label":"Applicationname","uniquekey":["category"],"columnmap":["applicationname"]}
+    return {"series":[{'data':data}], 'categories': categories,"column":"applicationname","label":"Applicationname","uniquekey":["category"],"columnmap":["applicationname"],"type":"apps_detection_map"}

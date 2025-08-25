@@ -144,7 +144,7 @@ def render(results):
                 newDict['data'] = dict[key]
                 finalResult.append(newDict)
         
-        return {"result":{"categories":distinct_xaxis_array,"series":finalResult}}
+        return {"result":{"categories":distinct_xaxis_array,"series":finalResult},"type": "injection_topoperation_data"}
     
 
     except Exception as e:

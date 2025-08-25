@@ -45,6 +45,6 @@ def render(result):
             data.append(item)
             counter=counter+1
         
-    return {"result":data,"column":"destination_country","label":"Country","uniquekey":['name'],"columnmap":["destination_country"]}
+    return {"result":data,"column":"destination_country","label":"Country","uniquekey":['name'],"columnmap":["destination_country"],"type":"country_detection_map"}
 
   

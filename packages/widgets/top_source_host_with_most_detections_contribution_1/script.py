@@ -46,4 +46,4 @@ def render(result):
             data.append(item["total"])
             counter=counter+1
         
-    return {"series":[{'data':data}], 'categories': categories,"column":"source_hostname","label":"Hostname","type":"host_detection_map","uniquekey":["category"],"columnmap":["source_hostname"],"type":"host_detection_map"}
+    return {"series":[{'data':data}], 'categories': categories,"column":"source_hostname","label":"Hostname","type":"host_detection_map","uniquekey":["category"],"columnmap":["source_hostname"]}

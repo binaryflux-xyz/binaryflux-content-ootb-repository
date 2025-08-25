@@ -43,4 +43,4 @@ def render(result):
             data.append(item)
             counter=counter+1
         
-    return {"result":data, "type":"top_events_data"}
+    return {"result":data, "type":"database_top_user"}

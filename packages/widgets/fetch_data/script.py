@@ -53,4 +53,4 @@ def render(result):
 
     colors = ["#09d37a","#499071","#079a5a","#00876c"]
         
-    return {"series":series,'categories': categories,"colors":colors}
+    return {"series":series,'categories': categories,"colors":colors, "type": "database_crud_data"}

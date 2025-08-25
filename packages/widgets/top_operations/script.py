@@ -49,4 +49,4 @@ def render(result):
     # Step 4: Convert series_map into the desired list of dictionaries format
     series = [{'name': name, 'data': counts} for name, counts in series_map.items()]
         
-    return {"series":series,'categories': categories}
+    return {"series":series,'categories': categories, "type": "injection_topoperation_data"}
