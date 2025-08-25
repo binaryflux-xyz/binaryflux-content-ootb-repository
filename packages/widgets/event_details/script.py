@@ -10,9 +10,11 @@ def configure():
 # this to return query to be used for rendering widget and its parameters
 def query():
     return {
-        "query": "SELECT event_description AS eventdescription, kaspersky_event_category AS category,kaspersky_event_entity as entity,  kaspersky_event_action as action, count(*) AS count FROM aggregation_table WHERE event_description IS NOT NULL AND kaspersky_event_category IS NOT NULL AND kaspersky_event_entity IS NOT NULL AND kaspersky_event_action IS NOT NULL AND type = :type GROUP BY event_description, kaspersky_event_category, kaspersky_event_entity,kaspersky_event_action",
-        "parameters": {"type":"top_event_details"},
+        "query": "SELECT event_description AS eventdescription, kaspersky_event_category AS category,kaspersky_event_entity as entity, source_device_name as device, kaspersky_event_action as action, count(*) AS count FROM aggregation_table WHERE event_description IS NOT NULL AND kaspersky_event_category IS NOT NULL AND kaspersky_event_entity IS NOT NULL AND source_device_name IS NOT NULL AND kaspersky_event_action IS NOT NULL AND type = :type GROUP BY event_description, kaspersky_event_category, kaspersky_event_entity,source_device_name,kaspersky_event_action",
+        "parameters": {"type":"top_events_data"},
     }
+
+
 # this to return filter queries based on filters selected by user and its parameters
 def filters(filters):
     return None
@@ -34,6 +36,6 @@ def render(results):
     if len(results) > 10:
         results = results[:10]  # Limit to the first five records        
 
-    columnList=['eventdescription', 'category', 'entity','action','count'];
+    columnList=['eventdescription', 'category', 'entity', 'device','action','count'];
     
-    return {"result": results,"columns":columnList}
+    return {"result": results,"columns":columnList, "type":"top_events_data"}

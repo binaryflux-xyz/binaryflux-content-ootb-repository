@@ -11,7 +11,7 @@ def configure():
 def query():
     return {
         "query": "select group_name as name,count(*) as weight from aggregation_table  where group_name is not null and type = :type group by group_name",
-        "parameters": {"type":"top_group_name"},
+        "parameters": {"type":"top_events_data"},
     }
 
 # this to return filter queries based on filters selected by user and its parameters
@@ -40,4 +40,4 @@ def render(result):
             data.append(item)
             counter=counter+1
         
-    return {"result":data}
+    return {"result":data, "type":"top_events_data"}

@@ -11,7 +11,7 @@ def configure():
 def query():
     return {
         "query": "select event_outcome ,count(*) as actioncount from aggregation_table where event_outcome is not null and type = :type group by event_outcome",
-        "parameters": {"type":"top_action_name"},
+        "parameters": {"type":"top_events_data"},
     }
 # this to return filter queries based on filters selected by user and its parameters
 def filters(filters):
@@ -38,4 +38,4 @@ def render(data):
             "y": item["actioncount"]
         })
     
-    return {"result":transformed_data}
+    return {"result":transformed_data, "type":"top_events_data"}

@@ -33,4 +33,4 @@ def sort():
 def render(results):
     series = {item["detectioncriticality"]: item["criticalitycount"] for item in results if item["detectioncriticality"] != "NONE"}
 
-    return {"result": series}
+    return {"result": series} 

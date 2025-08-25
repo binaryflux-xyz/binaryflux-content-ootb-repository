@@ -11,7 +11,7 @@ def configure():
 def query():
     return {
         "query": "SELECT source_device_id AS device, count(*) AS total FROM aggregation_table WHERE source_device_id IS NOT NULL AND type = :type GROUP BY source_device_id",
-        "parameters": {"type":"top_device_name"},
+        "parameters": {"type":"top_events_data"},
     }
 
 # this to return filter queries based on filters selected by user and its parameters
@@ -41,4 +41,4 @@ def render(result):
             data.append(item["total"])
             counter=counter+1
         
-    return {"series":[{'data':data}], 'categories': categories}
+    return {"series":[{'data':data}], 'categories': categories, "type":"top_events_data"}

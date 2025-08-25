@@ -5,6 +5,8 @@ def configure():
         "searchable": True,
         "datepicker": True,
         "properties": {"type": "table"},
+        "filters":['tcs/cisco/widgetfilter/criticality_filter/','tcs/cisco/widgetfilter/tactic_filter/',
+                   'tcs/cisco/widgetfilter/technique_filter/','tcs/cisco/widgetfilter/stream_filter/'],
         "dimension": {"x":0,"y":1,"width": 4, "height": 7}
     }
 

@@ -1,5 +1,4 @@
 # sample name -> widgets/accounts_compromised/script.py
-import time
 
 # this to return default widget config
 def configure():
@@ -7,6 +6,8 @@ def configure():
         "searchable": True,
         "datepicker": True,
         "properties": {"type": "table"},
+        "filters":['tcs/cisco/widgetfilter/criticality_filter/','tcs/cisco/widgetfilter/tactic_filter/',
+                   'tcs/cisco/widgetfilter/technique_filter/','tcs/cisco/widgetfilter/stream_filter/'],
         "dimension": {"x":4,"y":1,"width": 4, "height": 7}
     }
 
@@ -31,6 +32,8 @@ def filters(filter):
             parameters["technique"] = filter.get("detectiontechnique")
         if filter.get("streamname"):
             parameters["streamname"] = filter.get("streamname")
+        if filter.get("badge"):
+            parameters["badge"] = filter.get("badge")
     return {"filterqueries": filterqueries, "parameters": parameters}
 
 
@@ -51,13 +54,14 @@ def sort(sorcol, sortorder):
 
 # this to return return formated results to render a widget
 def render(results):
+
     if not results or len(results) == 0:
         raise Exception("no results found")
     
     for result in results:
-        result['description']=None
-        # result['description']=graph.getMeta(result['entity'],result['entitytype'])
+        result['description']=graph.getMeta(result['entity'],result['entitytype'])
     
     columns = ['entity' , 'score']
 
     return  {"result":{"columns": columns, "rows": results}}
+

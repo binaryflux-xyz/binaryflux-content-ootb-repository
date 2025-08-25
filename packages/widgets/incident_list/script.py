@@ -28,14 +28,9 @@ def search(freetext):
     }
 
 
+# this to return sort query
 def sort():
-    return {
-"sortcol":"createdon",
-"sortorder":"desc"
-}
-
-
-
+    return None
 
 # this to return return formated results to render a widget
 def render(results):

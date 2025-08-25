@@ -3,7 +3,7 @@ def configure():
     return {
         "searchable": False, #Boolean value depending whether the widget is searchable or not
         "datepicker": False,
-        "properties": {"type": "line","layout": "conciselayout","onclick":"filter_not_apply"},
+        "properties": {"type": "line","layout": "conciselayout"},
         "dimension": {"x": 4, "y": 4, "width": 4, "height": 2} #dimensions of widget on GRID
     }
 
@@ -22,6 +22,7 @@ def filters(filters):
 def search(freetext):
     return None
 
+# this to return sort query
 def sort():
     return None
 

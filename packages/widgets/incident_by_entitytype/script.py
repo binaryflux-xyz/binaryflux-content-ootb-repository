@@ -3,7 +3,7 @@ def configure():
     return {
         "searchable": False, #Boolean value depending whether the widget is searchable or not
         "datepicker": True,
-        "properties": {"type": "donut","layout": "conciselayout","onclick":"filter_not_apply"},
+        "properties": {"type": "donut","layout": "conciselayout"},
         "dimension": {"x": 8, "y": 2, "width": 4, "height": 2} #dimensions of widget on GRID
     }
 

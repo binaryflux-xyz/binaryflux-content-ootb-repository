@@ -12,7 +12,7 @@ def configure():
 def query():
     return {
         "query": "SELECT * from fn_statcard",
-        "parameters": {"stattype":"DETECTIONS","streamids":["67da84fc2bf6c15815b9442a", "67da853a2bf6c15815b9442c"]}
+        "parameters": {"stattype":"DETECTIONS","streamids":["677a8bf6a3620f5283540984", "677b13caa3620f5283540994"]}
     }
 
 

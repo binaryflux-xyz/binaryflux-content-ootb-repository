@@ -32,7 +32,6 @@ def sort():
 "sortorder":"asc"
 }
 
-# this to return return formated results to render a widget
 def render(results):
     if not results or len(results) == 0:
         raise Exception("no results found")

@@ -4,8 +4,9 @@
 def configure():
     return {
         "searchable": True,
-        "datepicker": False,
+        "datepicker": True,
         "properties": {"type": "table"},
+        "filters":['tcs/cisco/widgetfilter/criticality_filter/','tcs/cisco/widgetfilter/tactic_filter/','tcs/cisco/widgetfilter/technique_filter/','tcs/cisco/widgetfilter/stream_filter/','tcs/cisco/widgetfilter/detection_name_filter/'],
         "dimension": {"x":0,"y":0,"width": 4, "height": 8}
     }
 
@@ -47,13 +48,12 @@ def search(freetext):
 
 
 
+# this to return sort query
 def sort():
     return {
         "sortcol":"score",
         "sortorder":"DESC"
     }
-
-    
 
 
 # this to return return formated results to render a widget
@@ -63,8 +63,7 @@ def render(results):
         raise Exception("no results found")
     
     for result in results:
-        result['description']=None
-        # result['description']=graph.getMeta(result['entity'],result['entitytype'])
+        result['description']=graph.getMeta(result['entity'],result['entitytype'])
     
     columns = ['entity' , 'score']
 

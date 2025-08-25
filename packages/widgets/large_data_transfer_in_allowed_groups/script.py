@@ -7,7 +7,7 @@ def configure():
         "datepicker": True,
         "pagination": False,
         "properties": {"type": "line","onclick":"open_offcanvaspanel"},
-        "dimension": {"x": 0, "y": 13, "width": 4, "height": 4}
+        "dimension": {"x": 8, "y": 5, "width": 4, "height": 4}
     }
 
 # This returns the query to be used for rendering the widget and its parameters
@@ -38,7 +38,6 @@ def sort():
         "sortorder": "desc"
     }
 
-  
 # This processes and renders the widget results
 def render(results):
     if not results or len(results) == 0:

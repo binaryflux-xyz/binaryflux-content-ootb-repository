@@ -6,7 +6,7 @@ def configure():
         "searchable": False,
         "datepicker": True,
         "properties": {"type": "wordcloud"},
-        "dimension": {"x":0,"y":1,"width": 4, "height": 4}
+        "dimension": {"x":4,"y":1,"width": 4, "height": 4}
     }
 
 # this to return query to be used for rendering widget and its parameters

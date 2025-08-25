@@ -1,4 +1,6 @@
 # sample name -> widgets/accounts_compromised/script.py
+from datetime import datetime
+import time
 from datetime import datetime, timedelta
 
 
@@ -18,7 +20,7 @@ def configure():
 # this to return query to be used for rendering widget and its parameters
 def query():
     # converting time into seconds
-    starttime = parameters.get("starttime")/1000
+    starttime =parameters.get("starttime")/1000
     endtime = parameters.get("endtime")/1000
 
     endtime = datetime.utcfromtimestamp(endtime)
@@ -50,7 +52,7 @@ def query():
         timerange='YYYY'
    
     return {
-        "query": "SELECT distinct detectioncriticality as detectioncriticality ,COUNT(detectionid) AS count, TO_CHAR(to_timestamp(scoretimestamp/1000), '" + timerange + "') AS xaxis FROM entityscoring GROUP BY detectioncriticality,xaxis",
+        "query": "SELECT distinct detectioncriticality as detectioncriticality ,COUNT(detectionid) AS count, TO_CHAR(to_timestamp(scoretimestamp/1000), '" + timerange + "') AS xaxis FROM entityscoring GROUP BY detectioncriticality,xaxis order by xaxis DESC",
         "parameters": {},
     }
 
@@ -66,16 +68,14 @@ def search(freetext):
     return None
 
 
-def sort():
-    return {
-        "sortcol":"count",
-        "sortorder":"DESC"
-    }
+# this to return sort query
+def sort(sorcol, sortorder):
+    sort += " order by " + sorcol + " " + sortorder
 
 
 # this to return return formated results to render a widget
 def render(results):
-    
+
     try:
         if not results or len(results) == 0:
             raise Exception("no results found")

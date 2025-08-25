@@ -6,7 +6,7 @@ def configure():
     return {
         "searchable": False,
         "datepiacker":True,
-        "properties": {"type": "scatterplot","limit":200},
+        "properties": {"type": "scatterplot"},
         "dimension": {"x": 4, "y": 14, "width": 8, "height": 4}
     }
 
@@ -33,10 +33,9 @@ def search(freetext):
     return None
 
 
-
 # this to return sort query
-def sort():
-    return {"sortcol":"total_score","sortorder":"desc"}
+def sort(sorcol, sortorder):
+    sort += " order by " + sorcol + " " + sortorder
 
 
 # this to return return formated results to render a widget

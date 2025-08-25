@@ -11,7 +11,7 @@ def configure():
 def query():
     return {
         "query": "select event_description as description ,count(*) as total from aggregation_table where event_description is not null and type = :type group by event_description",
-        "parameters": {"type":"eventstat_data"},
+        "parameters": {"type":"top_events_data"},
     }
 
 # this to return filter queries based on filters selected by user and its parameters
@@ -31,4 +31,4 @@ def sort():
 
 # this to return return formated results to render a widget
 def render(results):
-    return {"result":results}
+    return {"result":results, "type":"top_events_data"}

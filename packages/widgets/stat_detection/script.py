@@ -21,11 +21,9 @@ def filters(filters):
 def search(freetext):
     return None
 
-
-
 # this to return sort query
-def sort():
-    return None
+def sort(sorcol, sortorder):
+    sort += " order by " + sorcol + " " + sortorder
 
 # this to return return formated results to render a widget
 def render(results):

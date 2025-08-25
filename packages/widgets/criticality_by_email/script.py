@@ -10,8 +10,8 @@ def configure():
 # this to return query to be used for rendering widget and its parameters
 def query():
     return {
-        "query": "SELECT detectioncriticality ,count(*) as criticalitycount FROM entityscoring where streamname = ANY(:streamname) group by detectioncriticality",
-        "parameters": {"streamname":["Unusual Email Communication Patterns","Inbound Phishing and Malicious Content."]}
+        "query": "SELECT detectioncriticality ,count(*) as criticalitycount FROM entityscoring where (streamname = :streamname1 or  streamname= :streamname2) group by detectioncriticality",
+        "parameters": {"streamname1": "Unusual Email Communication Patterns", "streamname2": "Inbound Phishing and Malicious Content."}
     }
  
 # this to return filter queries based on filters selected by user and its parameters

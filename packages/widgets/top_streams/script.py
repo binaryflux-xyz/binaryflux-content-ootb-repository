@@ -6,6 +6,8 @@ def configure():
         'searchable': True,
         'datepicker': True,
         'properties': {'type': 'table'},
+        'filters':['tcs/cisco/widgetfilter/criticality_filter/','tcs/cisco/widgetfilter/tactic_filter/',
+                   'tcs/cisco/widgetfilter/technique_filter/'],
         'dimension': {'x':8,'y':1,'width': 4, 'height': 7}
     }
 
@@ -62,6 +64,7 @@ def render(results):
 
     for result in results:
         contentMap = cache.getStreamMeta(result['id'])
-        result['description'] = contentMap['description']
+        if contentMap:  # Check if contentMap is not None
+          result['description'] = contentMap.get('description')
 
     return  {'result':{'columns': columns, 'rows': results}}

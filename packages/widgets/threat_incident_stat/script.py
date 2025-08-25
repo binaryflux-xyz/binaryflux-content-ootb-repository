@@ -40,3 +40,5 @@ def render(results):
         total += criticality_map.get(category, 0)
     
     return {"result":{"series":[{'data':series,"name": 'Incidents'}],"categories":categories,"total":total}}
+
+  

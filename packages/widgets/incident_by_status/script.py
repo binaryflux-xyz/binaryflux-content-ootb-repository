@@ -3,7 +3,7 @@ def configure():
     return {
         "searchable": False,
         "datepicker": True,
-        "properties": {"type": "singlecolumn","layout":"conciselayout","onclick":"filter_not_apply"},
+        "properties": {"type": "singlecolumn","layout":"conciselayout"},
         "dimension": {"x":4,"y":0,"width": 4, "height": 2}
     }
 

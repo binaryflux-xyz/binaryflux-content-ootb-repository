@@ -20,7 +20,6 @@ def query():
             WHERE email_from_address is not null 
               AND email_to_address is not null 
               AND email_attachments_size is not null 
-              and email_attachments_size !=0 
               AND type = :type
             GROUP BY email_from_address, email_to_address;
         """,
@@ -47,7 +46,6 @@ def sort():
     }
 
 
-
 # this to return return formated results to render a widget
 def render(results):
     
@@ -69,4 +67,4 @@ def render(results):
     
     columns = ['from','to','weight']
     
-    return  {"series":[{"keys": columns, "data": categories}],"column":"email_from_address","label":"EmailAddress","uniquekey":["from","to"],"columnmap":["email_from_address","email_to_address"]}
+    return  {"series":[{"keys": columns, "data": categories}],"column":"email_from_address","label":"EmailAddress","unit":"MB","uniquekey":["from","to"],"columnmap":["email_from_address","email_to_address"],"typemap":{"email_to_address":"list"},"type":"microsoft_attachments_exchanged"}

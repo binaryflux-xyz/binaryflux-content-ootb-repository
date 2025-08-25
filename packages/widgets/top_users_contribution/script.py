@@ -1,0 +1,46 @@
+# this to return default widget config
+def configure():
+    return {
+        "searchable": False,
+        "datepicker": False,
+        "properties": {"type": "wordcloud","layout": "conciselayout","onclick":"not_open_offcanvaspanel"},
+        "dimension": {"x":0,"y":2,"width": 4, "height": 2}
+    }
+
+# this to return query to be used for rendering widget and its parameters
+def query():
+    return {
+        'query': 'select user_name as name,count(*) as weight from aggregation_table  where user_name is not null and type = :type group by user_name',
+        'parameters': {"type":"database_top_user"}
+    }
+
+
+# this to return filter queries based on filters selected by user and its parameters
+def filters(filter):
+    return None
+
+
+# this to return free text search query and its parameters
+def search(freetext):
+    
+    return None
+
+
+# this to return sort query
+def sort():
+    return{
+        "sortcol":"weight",
+        "sortorder":"desc"    
+    }
+
+def render(result):
+    data = []
+    categories = []
+    counter=0
+
+    for item in result:
+        if(counter<20):
+            data.append(item)
+            counter=counter+1
+        
+    return {"result":data, "type":"top_events_data"}

@@ -1,0 +1,64 @@
+# this to return default widget config
+def configure():
+    return {
+        "searchable": False,
+        "datepicker": True,
+        "pagination": False,
+        "properties": {"type": "treemap","onclick":"open_offcanvaspanel"},
+        "dimension": {"x": 6, "y": 6, "width": 6, "height": 3},
+    }
+
+
+# this to return query to be used for rendering widget and its parameters
+def query():
+
+    return {
+        "query": """SELECT entity,SUM(CASE 
+                          WHEN network_bytes_transferred ~ '^[0-9]+$' THEN CAST(network_bytes_transferred AS NUMERIC) 
+                          ELSE 0 
+                       END) as bytestransferred \
+                from detection \
+                where criticality = :criticality \
+                group by entity""",
+        "parameters": {"criticality": "NONE"},
+    }
+
+
+# this to return filter queries based on filters selected by user and its parameters
+def filters(filter):
+    return None
+
+
+# this to return free text search query and its parameters
+def search(freetext):
+    searchquery = ' "entity" ilike :entity '
+    return {
+        "searchquery": searchquery,
+        "parameters": {"entity": "%" + freetext + "%"},
+    }
+
+
+# this to return sort query
+def sort():
+    return {"sortcol": "bytestransferred", "sortorder": "DESC"}
+
+
+# this to return return formated results to render a widget
+def render(results):
+    if not results or len(results) == 0:
+        raise Exception("no results found")
+
+    categories = []
+    counter=0
+
+    for result in results:
+        if(counter<10):
+            bytestransferred = int(result["bytestransferred"])
+            bytes_transferred = round((bytestransferred / 1024), 2)
+            entity = result["entity"]
+
+            category = {"name": entity, "value": bytes_transferred}
+            categories.append(category)
+            counter=counter+1
+
+    return {"result": categories,"column":"source_ip","label":"Entity"}

@@ -11,7 +11,7 @@ def configure():
 def query():
     return {
         "query": "select url as name,count(*) as value from aggregation_table  where url is not null and type = :type group by url",
-        "parameters": {"type":"top_urls_data"},
+        "parameters": {"type":"top_events_data"},
     }
 
 # this to return filter queries based on filters selected by user and its parameters
@@ -30,15 +30,8 @@ def sort():
         "sortorder":"desc"    
     }
 
-
-def render(results):
-    if not results:
+def render(result):
+    if not result or len(result) == 0:
         raise Exception("no results found")
-    
-    # Limit to the first 10 records if there are more than 10
-    if len(results) > 10:
-        results = results[:10]
-    
-    return {"result": results}
-
-
+        
+    return {"result": result, "type":"top_events_data"}

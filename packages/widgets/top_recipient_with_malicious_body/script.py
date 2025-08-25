@@ -6,7 +6,7 @@ def configure():
         "searchable": False,
         "datepicker": True,
         "properties": {"type": "treemap","onclick":"open_offcanvaspanel"},
-        "dimension": {"x":6,"y":5,"width": 6, "height": 4}
+        "dimension": {"x":4,"y":5,"width": 4, "height": 4}
     }
 
 # this to return query to be used for rendering widget and its parameters
@@ -27,14 +27,6 @@ def filters(filter):
 def search(freetext):
     
     return None
-
-
-# this to return sort query
-def sort():
-    return{
-        "sortcol":"weight",
-        "sortorder":"desc"    
-    }
 
 
 # this to return sort query

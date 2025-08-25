@@ -3,7 +3,7 @@ def configure():
     return {
         "searchable": False,
         "datepicker": True,
-        "properties": {"type": "pie","layout":"conciselayout","onclick":"filter_not_apply"},
+        "properties": {"type": "pie","layout":"conciselayout"},
         "dimension": {"x":8,"y":0,"width": 4, "height": 2}
     }
 
@@ -24,6 +24,7 @@ def search(freetext):
 
   return None
 
+# this to return sort query
 def sort():
     return {
         "sortcol":"criticalitycount",

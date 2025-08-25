@@ -1,0 +1,122 @@
+# sample name -> widgets/accounts_compromised/script.py
+import time
+
+# this to return default widget config
+def configure():
+    return {
+        "searchable": False,
+        "datepicker": True,
+        "pagination": False,
+        "properties": {"type": "column","onclick":"open_offcanvaspanel"},
+        "dimension": {"x": 6, "y": 3, "width": 6, "height": 3},
+    }
+
+
+
+# this to return query to be used for rendering widget and its parameters
+def query2():
+
+    return {
+        "query": "SELECT entity,applicationname,count(*) as frequency \
+                from detection \
+                where criticality = :criticality \
+                group by entity,applicationname",
+        "parameters": {"criticality": "NONE"},
+    }
+
+def query():
+
+    return {
+        "query": "SELECT entity,applicationname,count(*) as frequency \
+                from detection \
+                where criticality = :criticality \
+                and entity in (select entity from \
+                    (select entity, count(*) as freq from detection \
+                    where criticality = :criticality \
+                    group by entity order by freq desc limit 10))\
+                and applicationname in (select applicationname from \
+                    (select applicationname, count(*) as f from detection \
+                    where criticality = : criticality \
+                    group by applicationname order by f desc limit 100))\
+                group by entity,applicationname",
+        "parameters": {"criticality": "NONE"},
+    }
+
+# this to return filter queries based on filters selected by user and its parameters
+def filters(filter):
+    return None
+
+
+# this to return free text search query and its parameters
+def search(freetext):
+    return None
+
+
+# this to return sort query
+def sort():
+    return None
+
+def render2(results):
+    ips = set()
+    seen_apps = set()
+    data = {}
+
+    for result in results:
+    
+        entity = result.get('entity')
+        ips.add(entity)
+
+        app = result.get('applicationname')
+
+        if app not in seen_apps:
+            data[app]=[0]*10
+            seen_apps.add(app)
+
+    ips = list(ips)
+
+    for result in results:
+        entity = result.get('entity')
+        application = result.get('applicationname')
+        frequencyArr = data.get(application)
+        frequencyArr[ips.index(entity)] = result.get('frequency')
+
+    series = []
+
+    for key, value in data.items() :
+        series.append({'name':key,"data":value})
+
+    return {'categories':ips,'series':series}
+# this to return return formated results to render a widget
+def render(results):
+
+    entity_frequencies = {}
+    for item in results:
+        entity = item['entity']
+        frequency = item['frequency']
+        if entity in entity_frequencies:
+            entity_frequencies[entity] += frequency
+        else:
+            entity_frequencies[entity] = frequency
+
+    # Step 2: Sort the entities by total frequency and select the top 10
+    top_entities = sorted(entity_frequencies.items(), key=lambda x: x[1], reverse=True)[:10]
+    top_entities = [entity for entity, _ in top_entities]
+
+    # Step 3: Create the categories list
+    categories = top_entities
+
+    # Step 4: Extract unique application names for the top entities
+    application_names = sorted(set(item['applicationname'] for item in results if item['entity'] in top_entities))
+
+    # Step 5: Create the series structure
+    series = []
+    for app_name in application_names:
+        app_data = {
+            'name': app_name,
+            'data': [next((item['frequency'] for item in results if item['applicationname'] == app_name and item['entity'] == entity), 0) for entity in top_entities]
+        }
+        series.append(app_data)
+        
+    return {"result": {"categories":categories,"series":series},"column":"entity","label":"Entity"}
+
+
