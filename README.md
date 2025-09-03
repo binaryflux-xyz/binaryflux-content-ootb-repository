@@ -14,6 +14,15 @@ Use these lookup data to enrich events. Import it into minio or s3 by create a b
 ## Maxmindcountries
     Description: Provides geolocation countries data using Maxmind’s processed GeoLite2-Country-Locations data
     Path: s3://lookups/maxmind/GeoLite2-Country-Locations-en.csv
+## Maxmindipv4city
+    Description: Provides geolocation information for IPv4 addresses using Maxmind’s processed GeoLite2-City-Blocks data
+    Path: s3://lookups/maxmind/GeoLite2-City-Blocks-IPv4-processed.csv
+## Maxmindipv6city
+    Description: Provides geolocation information for IPv6 addresses using Maxmind’s processed GeoLite2-City-Blocks data
+    Path: s3://lookups/maxmind/GeoLite2-City-Blocks-IPv6-processed.csv
+## Maxmindcities
+    Description: Provides geolocation city data using Maxmind’s processed GeoLite2-City-Locations data
+    Path: s3://lookups/maxmind/GeoLite2-City-Locations-en.csv
 ## MitreTactics
     Description: Provides comprehensive data on MITRE tactics and their descriptions, aiding in threat intelligence and cybersecurity analysis
     Path: s3://lookups/mitre/mitre_tactics_and_description.csv
