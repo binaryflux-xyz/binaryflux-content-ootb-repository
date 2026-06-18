@@ -25,7 +25,8 @@ def algorithm(event):
 
     bytesTransferred = sentbytes + receivedbytes
     threshold = 1000000000  # to be taken from variable
-    rangeooutsie=range.inCIDRRange(destination_ip,"10.0.0.0/8")
+    cidrrange=""
+    rangeooutsie=range.inCIDRRange(destination_ip,cidrrange)
 
     account_name = event.get("user_name")
 

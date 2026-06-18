@@ -32,7 +32,8 @@ def algorithm(event):
 
     bytesTransferred = sentbytes + receivedbytes
     threshold = 10000000 # to be taken from variable
-    incidrrange=range.inCIDRRange(destination_ip,"10.0.0.0/8")
+    cidrrange=""
+    incidrrange=range.inCIDRRange(destination_ip,cidrrange)
 
     condition2 = (
         event.get("destination_port") in destination_ports

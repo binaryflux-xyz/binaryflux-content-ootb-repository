@@ -7,7 +7,7 @@ def groupby():
 
 def algorithm(event):
     destination_ip = event.get("destination_ip")
-    dnsservers = ['10.10.102.52','10.10.2.52']
+    dnsservers = []
     if event.get("event_level") == "critical" and destination_ip not in dnsservers:
         return 1.0
 
