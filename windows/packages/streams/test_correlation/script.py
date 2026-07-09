@@ -1,4 +1,5 @@
 def build(event):
+    #{%customer%}/{%tenant%}
     if  event.get("eventtype")=="groupmembers":
         data = relation(event)
     elif event.get("eventtype")=="users":
